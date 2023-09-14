@@ -1,12 +1,5 @@
 const Author = require("../models/authors.model");
 
-//* This first one is just a test for our routes using postman
-module.exports.apiTest = (req, res) => {
-  res.json({
-    message: "From controller -Server is working!",
-  });
-};
-
 //! Get All
 module.exports.allAuthors = (req, res) => {
   Author.find()
