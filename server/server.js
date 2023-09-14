@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //* import routes
-// require("./routes/person.routes")(app);
+require("./routes/authors.routes")(app);
 
 //* Listening on port
 app.listen(port, () => console.log(`✨Listening on port: ${port}✨`));
