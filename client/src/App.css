@@ -43,3 +43,9 @@
   align-items: center;
   justify-content: center;
 }
+
+#editDeleteSpacing{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}

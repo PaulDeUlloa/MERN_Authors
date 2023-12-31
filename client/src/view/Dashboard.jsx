@@ -43,7 +43,7 @@ const Dashboard = () => {
             return (
               <tr key={idx}>
                 <td>{oneAuthor.name}</td>
-                <td>
+                <td id="editDeleteSpacing">
                   <Link to={`/authors/${oneAuthor._id}/edit`}>
                     <button>Edit</button>
                   </Link>
