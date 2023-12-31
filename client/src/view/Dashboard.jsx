@@ -34,8 +34,8 @@ const Dashboard = () => {
       <table id="tableCentering">
         <thead>
           <tr id="tableHeaderSpacing">
-            <th>Author</th>
-            <th>Actions</th>
+            <th>Author:</th>
+            <th>Actions:</th>
           </tr>
         </thead>
         <tbody id="dashboardContentSpacing">
