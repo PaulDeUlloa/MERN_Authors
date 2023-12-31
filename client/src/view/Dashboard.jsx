@@ -30,7 +30,7 @@ const Dashboard = () => {
 
   return (
     <div>
-      <h2>We have quotes by:</h2>
+      <h2 id="quotesTitle">We have quotes by:</h2>
       <table id="tableCentering">
         <thead>
           <tr id="tableHeaderSpacing">
