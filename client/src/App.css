@@ -37,6 +37,10 @@
   }
 }
 
+#quotesTitle{
+  color: red;
+}
+
 #tableCentering{
   display: flex;
   flex-direction: column;
