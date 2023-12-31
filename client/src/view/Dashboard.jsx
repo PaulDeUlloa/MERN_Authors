@@ -42,7 +42,7 @@ const Dashboard = () => {
           {authorList.map((oneAuthor, idx) => {
             return (
               <tr key={idx}>
-                <td>{oneAuthor.name}</td>
+                <td id="authorNameFont">{oneAuthor.name}</td>
                 <td id="editDeleteSpacing">
                   <Link to={`/authors/${oneAuthor._id}/edit`}>
                     <button>Edit</button>

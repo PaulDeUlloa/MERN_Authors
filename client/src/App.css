@@ -49,3 +49,7 @@
   flex-direction: row;
   gap: 10px;
 }
+
+#authorNameFont{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
