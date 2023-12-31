@@ -53,3 +53,13 @@
 #authorNameFont{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+#dashboardContentSpacing{
+  margin: 10px;
+}
+
+#tableHeaderSpacing{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}

@@ -33,12 +33,12 @@ const Dashboard = () => {
       <h2>We have quotes by:</h2>
       <table id="tableCentering">
         <thead>
-          <tr>
+          <tr id="tableHeaderSpacing">
             <th>Author</th>
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id="dashboardContentSpacing">
           {authorList.map((oneAuthor, idx) => {
             return (
               <tr key={idx}>
