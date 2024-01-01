@@ -16,7 +16,7 @@ function App() {
         </button>
         <button id="navbarButtonsStyling">
           <Link to="/authors/new" id="navbarLinksFontColor">
-            Add an author
+            Add Author
           </Link>
         </button>
       </div>
