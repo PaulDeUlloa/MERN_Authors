@@ -8,8 +8,12 @@ function App() {
   return (
     <div className="App">
       <h1 id="favAuthorsColoring">Favorite Authors</h1>
-      <Link to="/authors">Home</Link> |{" "}
-      <Link to="/authors/new">Add an author</Link>
+      <button>
+        <Link to="/authors">Home</Link>
+      </button>
+      <button>
+        <Link to="/authors/new">Add an author</Link>
+      </button>
       <hr />
       <Routes>
         <Route path="/authors" element={<Dashboard />} />

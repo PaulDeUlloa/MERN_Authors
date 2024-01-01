@@ -29,7 +29,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div id="backgroundThemeChange">
+    <div>
       <h2 id="quotesTitle">We have quotes by:</h2>
       <table id="tableCentering">
         <thead>
