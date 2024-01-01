@@ -41,6 +41,14 @@ body{
   background-color: rgb(228, 182, 66);
 }
 
+#navbarButtonsStyling{
+  background-color: rgb(4, 248, 215);
+}
+
+#navbarLinksFontColor{
+  text-decoration: none;
+}
+
 #favAuthorsColoring{
   color: brown;
 }
