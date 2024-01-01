@@ -37,6 +37,10 @@
   }
 }
 
+#favAuthorsColoring{
+  color: brown;
+}
+
 #quotesTitle{
   color: red;
 }
