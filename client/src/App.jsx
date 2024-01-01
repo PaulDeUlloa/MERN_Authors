@@ -8,16 +8,18 @@ function App() {
   return (
     <div className="App">
       <h1 id="favAuthorsColoring">Favorite Authors</h1>
-      <button id="navbarButtonsStyling">
-        <Link to="/authors" id="navbarLinksFontColor">
-          Home
-        </Link>
-      </button>
-      <button id="navbarButtonsStyling">
-        <Link to="/authors/new" id="navbarLinksFontColor">
-          Add an author
-        </Link>
-      </button>
+      <div id="navbarButtonsSpacing">
+        <button id="navbarButtonsStyling">
+          <Link to="/authors" id="navbarLinksFontColor">
+            Home
+          </Link>
+        </button>
+        <button id="navbarButtonsStyling">
+          <Link to="/authors/new" id="navbarLinksFontColor">
+            Add an author
+          </Link>
+        </button>
+      </div>
       <hr />
       <Routes>
         <Route path="/authors" element={<Dashboard />} />

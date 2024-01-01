@@ -38,11 +38,18 @@
 }
 
 body{
-  background-color: rgb(228, 182, 66);
+  background-color: rgb(22,44,79);
 }
 
 #navbarButtonsStyling{
-  background-color: rgb(4, 248, 215);
+  background-color: rgb(4,159,160);
+}
+
+#navbarButtonsSpacing{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
 }
 
 #navbarLinksFontColor{
@@ -50,7 +57,7 @@ body{
 }
 
 #favAuthorsColoring{
-  color: brown;
+  color: rgb(5,215,181);
 }
 
 #quotesTitle{
