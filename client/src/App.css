@@ -37,6 +37,10 @@
   }
 }
 
+body{
+  background-color: rgb(228, 182, 66);
+}
+
 #favAuthorsColoring{
   color: brown;
 }
