@@ -42,17 +42,19 @@ const Dashboard = () => {
           {authorList.map((oneAuthor, idx) => {
             return (
               <tr key={idx}>
-                <td id="authorNameFont">{oneAuthor.name}</td>
-                <td id="editDeleteSpacing">
-                  <Link to={`/authors/${oneAuthor._id}/edit`}>
-                    <button>Edit</button>
-                  </Link>
-                  <Link>
-                    <button onClick={() => handleDelete(oneAuthor._id)}>
-                      Delete
-                    </button>
-                  </Link>
-                </td>
+                <div id="tableDataSpacing">
+                  <td id="authorNameFont">{oneAuthor.name}</td>
+                  <td id="editDeleteSpacing">
+                    <Link to={`/authors/${oneAuthor._id}/edit`}>
+                      <button>Edit</button>
+                    </Link>
+                    <Link>
+                      <button onClick={() => handleDelete(oneAuthor._id)}>
+                        Delete
+                      </button>
+                    </Link>
+                  </td>
+                </div>
               </tr>
             );
           })}

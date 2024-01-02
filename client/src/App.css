@@ -73,6 +73,14 @@ body{
   margin-top: 60px;
 }
 
+#tableDataSpacing{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
 #editDeleteSpacing{
   display: flex;
   flex-direction: row;
@@ -86,6 +94,7 @@ body{
 #authorNameFont{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
+  
 }
 
 #dashboardContentSpacing{
