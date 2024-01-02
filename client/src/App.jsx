@@ -10,12 +10,12 @@ function App() {
       <div id="navBar">
         <h1 id="favAuthorsColoring">Favorite Authors</h1>
         <div id="navbarButtonsSpacing">
-          <button id="navbarButtonsStyling">
+          <button class="btn btn-dark">
             <Link to="/authors" id="navbarLinksFontColor">
               Home
             </Link>
           </button>
-          <button id="navbarButtonsStyling">
+          <button class="btn btn-dark">
             <Link to="/authors/new" id="navbarLinksFontColor">
               Add Author
             </Link>
