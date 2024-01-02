@@ -46,10 +46,13 @@ const Dashboard = () => {
                   <td id="authorNameFont">{oneAuthor.name}</td>
                   <td id="editDeleteSpacing">
                     <Link to={`/authors/${oneAuthor._id}/edit`}>
-                      <button>Edit</button>
+                      <button class="btn btn-light">Edit</button>
                     </Link>
                     <Link>
-                      <button onClick={() => handleDelete(oneAuthor._id)}>
+                      <button
+                        class="btn btn-light"
+                        onClick={() => handleDelete(oneAuthor._id)}
+                      >
                         Delete
                       </button>
                     </Link>
