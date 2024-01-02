@@ -20,7 +20,7 @@ function App() {
           </Link>
         </button>
       </div>
-      <hr />
+
       <Routes>
         <Route path="/authors" element={<Dashboard />} />
         <Route path="/authors/new" element={<CreateAuthor />} />
