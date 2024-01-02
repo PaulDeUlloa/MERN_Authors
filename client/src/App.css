@@ -42,8 +42,7 @@ body{
 }
 
 #navBar{
-  background-color: rgb(255, 255, 255);
-  border-radius: 100px;
+  background-color: rgb(255, 255, 255), mediumaquamarine;
   margin: 15px;
   padding: 8px;
 }
