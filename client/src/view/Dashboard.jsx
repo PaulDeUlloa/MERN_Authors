@@ -30,6 +30,7 @@ const Dashboard = () => {
 
   return (
     <div>
+      <img width="300" src="images\book.svg" alt="book icon" />
       <h2 id="quotesTitle">We have quotes by:</h2>
       <table id="tableCentering">
         <thead>
