@@ -45,7 +45,7 @@ body{
   background-color: rgb(255, 255, 255);
   border-radius: 100px;
   margin: 15px;
-  padding: 20px;
+  padding: 8px;
 }
 
 
@@ -59,10 +59,11 @@ body{
 #navbarLinksFontColor{
   text-decoration: none;
   color:rgb(255, 255, 255);
+  font-weight: 650;
 }
 
 #favAuthorsColoring{
-  color: rgb(5,215,181);
+  color: rgb(0, 0, 0);
 }
 
 #quotesTitle{
@@ -91,16 +92,22 @@ body{
   display: flex;
   flex-direction: row;
   gap: 10px;
+  
 }
 
 #editTitleColoring{
   color: rgb(255, 255, 255);
 }
 
+#editDeleteButtonsFont{
+  font-weight: 700;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
 #authorNameFont{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   color: white;
-  
+  font-weight: 500;
 }
 
 #dashboardContentSpacing{
@@ -111,7 +118,7 @@ body{
   display: flex;
   flex-direction: row;
   gap: 50px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   font-size: x-large;
   color: rgb(0, 255, 234);
 }
