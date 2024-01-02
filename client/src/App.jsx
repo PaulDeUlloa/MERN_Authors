@@ -7,18 +7,20 @@ import UpdateAuthor from "./view/UpdateAuthor";
 function App() {
   return (
     <div className="App">
-      <h1 id="favAuthorsColoring">Favorite Authors</h1>
-      <div id="navbarButtonsSpacing">
-        <button id="navbarButtonsStyling">
-          <Link to="/authors" id="navbarLinksFontColor">
-            Home
-          </Link>
-        </button>
-        <button id="navbarButtonsStyling">
-          <Link to="/authors/new" id="navbarLinksFontColor">
-            Add Author
-          </Link>
-        </button>
+      <div id="navBar">
+        <h1 id="favAuthorsColoring">Favorite Authors</h1>
+        <div id="navbarButtonsSpacing">
+          <button id="navbarButtonsStyling">
+            <Link to="/authors" id="navbarLinksFontColor">
+              Home
+            </Link>
+          </button>
+          <button id="navbarButtonsStyling">
+            <Link to="/authors/new" id="navbarLinksFontColor">
+              Add Author
+            </Link>
+          </button>
+        </div>
       </div>
 
       <Routes>

@@ -41,6 +41,13 @@ body{
   background-color: rgb(22,44,79);
 }
 
+#navBar{
+  background-color: rgb(0, 84, 241);
+  border-radius: 100px;
+  margin: 15px;
+  padding: 20px;
+}
+
 #navbarButtonsStyling{
   background-color: rgb(255, 255, 255);
 }
