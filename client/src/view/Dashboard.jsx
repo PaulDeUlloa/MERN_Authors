@@ -30,8 +30,8 @@ const Dashboard = () => {
 
   return (
     <div>
-      <h2 id="quotesTitle">We have quotes by:</h2>
-      <table id="tableCentering">
+      <h2 id="quotesTitle">Author Quotes:</h2>
+      <table id="tableCentering" class="table table-dark table-hover">
         <thead>
           <tr id="tableHeaderSpacing">
             <th>Author:</th>
