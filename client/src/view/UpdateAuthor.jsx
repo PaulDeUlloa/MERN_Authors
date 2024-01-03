@@ -39,7 +39,7 @@ const UpdateAuthor = () => {
   };
 
   return (
-    <div>
+    <div id="updatePageCentering">
       <h2 id="editTitleColoring">Edit this author:</h2>
       <form onSubmit={submitHandler}>
         <div>
