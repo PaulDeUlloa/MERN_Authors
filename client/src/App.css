@@ -151,3 +151,8 @@ body{
 #createPageFont{
   color: white;
 }
+
+#cancelSubmitButtonsFont{
+  font-weight: 700;
+  font-family:Arial, Helvetica, sans-serif;
+}

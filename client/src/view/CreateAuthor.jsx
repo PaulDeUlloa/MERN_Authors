@@ -40,9 +40,13 @@ const CreateAuthor = () => {
           />
           <div>
             <Link to="/authors">
-              <button>Cancel</button>
-            </Link>{" "}
-            <input type="submit" value="Submit" />
+              <button id="cancelSubmitButtonsFont" class="btn btn-light">
+                Cancel
+              </button>
+            </Link>
+            <button id="editDeleteButtonsFont" class="btn btn-light">
+              <input type="submit" value="Submit" />
+            </button>
           </div>
         </div>
       </form>
