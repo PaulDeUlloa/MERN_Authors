@@ -38,7 +38,7 @@ const CreateAuthor = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          <div>
+          <div id="newAuthorButtonSpacing">
             <Link to="/authors">
               <button id="cancelSubmitButtonsFont" class="btn btn-light">
                 Cancel
