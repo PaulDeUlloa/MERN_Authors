@@ -178,7 +178,8 @@ body{
 }
 
 #getStartedBackgroundImage{
-  
+  background-image: url(images/author-picture.jpg);
   background-repeat: no-repeat;
-  height: 200px;
+  background-position: center;
+  height: 500px;
 }
