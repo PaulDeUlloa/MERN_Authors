@@ -32,6 +32,13 @@ function App() {
           </button>
         </div>
       </div>
+      <div id="getStartedPage">
+        <button class="btn btn-light">
+          <Link to="/authors" id="navbarLinksFontColor">
+            GET STARTED
+          </Link>
+        </button>
+      </div>
 
       <Routes>
         <Route path="/authors" element={<Dashboard />} />
