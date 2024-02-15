@@ -34,7 +34,7 @@ function App() {
       </div>
       <div id="getStartedPage">
         <button class="btn btn-light">
-          <Link to="/authors" id="navbarLinksFontColor">
+          <Link to="/authors" id="getStartedBtnStyling">
             GET STARTED
           </Link>
         </button>

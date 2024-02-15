@@ -161,3 +161,18 @@ body{
   margin-top: 10px;
   gap: 10px;
 }
+
+/* GET STARTED */
+
+#getStartedBtnStyling{
+  text-decoration: none;
+  color:rgb(0, 0, 0);
+  font-weight: 650;
+}
+
+#getStartedPage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
