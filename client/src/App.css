@@ -183,3 +183,14 @@ body{
   background-position: center;
   height: 500px;
 }
+
+/* Create Page */
+
+#createSubmitButton{
+  text-decoration: none;
+}
+
+#testDecorationSubmit{
+  text-decoration: none;
+  list-style: none;
+}

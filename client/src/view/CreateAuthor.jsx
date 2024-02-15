@@ -44,8 +44,8 @@ const CreateAuthor = () => {
                 Cancel
               </button>
             </Link>
-            <button id="editDeleteButtonsFont" class="btn btn-light">
-              <input type="submit" value="Submit" />
+            <button id="createSubmitButton" class="btn btn-light">
+              <input type="submit" value="Submit" id="testDecorationSubmit" />
             </button>
           </div>
         </div>
