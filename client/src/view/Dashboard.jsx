@@ -33,8 +33,8 @@ const Dashboard = () => {
       <table id="tableCentering" class="table table-dark table-hover">
         <thead class="table-light">
           <tr id="tableHeaderSpacing">
-            <th>Authors:</th>
-            <th>Actions:</th>
+            <th id="tableHeadPadding">Authors</th>
+            <th id="tableHeadPadding">Actions</th>
           </tr>
         </thead>
         <tbody id="dashboardContentSpacing">
