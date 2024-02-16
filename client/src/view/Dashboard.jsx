@@ -29,7 +29,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div>
+    <div id="allAuthorsBgColor">
       <h2 id="quotesTitle">Author Quotes:</h2>
       <table id="tableCentering" class="table table-dark table-hover">
         <thead>

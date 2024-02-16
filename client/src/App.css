@@ -200,3 +200,7 @@ body{
 #errorMessagesColor{
   color: red;
 }
+
+#allAuthorsBgColor{
+  background-image: linear-gradient( to left ,rgb(234, 203, 203), rgb(106, 76, 225), rgb(234, 203, 203));
+}
