@@ -194,3 +194,9 @@ body{
   text-decoration: none;
   list-style: none;
 }
+/* Create Page end */
+
+
+#errorMessagesColor{
+  color: red;
+}

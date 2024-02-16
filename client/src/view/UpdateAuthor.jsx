@@ -59,7 +59,11 @@ const UpdateAuthor = () => {
         </div>
       </form>
       {errors.map((err, idx) => {
-        return <p key={idx}>{err}</p>;
+        return (
+          <p id="errorMessagesColor" key={idx}>
+            {err}
+          </p>
+        );
       })}
     </div>
   );
