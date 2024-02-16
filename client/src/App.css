@@ -87,6 +87,7 @@ body{
   align-items: center;
   justify-content: center;
   margin-top: 60px;
+  padding: 80px;
 }
 
 #tableDataSpacing{
@@ -127,7 +128,7 @@ body{
 #tableHeaderSpacing{
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 90px;
   font-family:Arial, Helvetica, sans-serif;
   font-size: x-large;
   color: rgb(255, 255, 255);
@@ -202,5 +203,5 @@ body{
 }
 
 #allAuthorsBgColor{
-  background-image: linear-gradient( to left ,rgb(234, 203, 203), rgb(106, 76, 225), rgb(234, 203, 203));
+  background-image: linear-gradient( to bottom ,rgb(234, 203, 203), rgb(185, 109, 55), rgb(234, 203, 203));
 }
