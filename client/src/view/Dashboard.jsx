@@ -32,7 +32,7 @@ const Dashboard = () => {
     <div id="allAuthorsBgColor">
       <h2 id="quotesTitle">Author Quotes:</h2>
       <table id="tableCentering" class="table table-dark table-hover">
-        <thead>
+        <thead class="table-light">
           <tr id="tableHeaderSpacing">
             <th>Author:</th>
             <th>Actions:</th>
