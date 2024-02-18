@@ -181,14 +181,15 @@ body{
   align-items: center;
   justify-content: center;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-#getStartedBackgroundImage{
+/* #getStartedBackgroundImage{
   background-image: url(images/author-picture.jpg);
   background-repeat: no-repeat;
   background-position: center;
   height: 500px;
-}
+} */
 
 /* Create Page */
 
