@@ -211,3 +211,26 @@ body{
 #allAuthorsBgColor{
   background-image: linear-gradient( to bottom ,rgb(234, 203, 203), rgb(185, 109, 55), rgb(234, 203, 203));
 }
+
+/* Carousel Wrapper */
+#carouselWrapper{
+  margin: auto 600px;
+}
+
+@media screen and (max-width: 1630px) { 
+  #carouselWrapper{
+    margin: auto 400px;
+  }
+}
+
+@media screen and (max-width: 1200px) { 
+  #carouselWrapper{
+    margin: auto 200px;
+  }
+}
+
+@media screen and (max-width: 800px) { 
+  #carouselWrapper{
+    margin: auto 100px;
+  }
+}
