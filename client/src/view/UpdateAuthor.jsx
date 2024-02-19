@@ -54,7 +54,9 @@ const UpdateAuthor = () => {
             <Link to="/authors">
               <button>Cancel</button>
             </Link>{" "}
-            <input type="submit" value="Submit" />
+            <button>
+              <input type="submit" value="Submit" />
+            </button>
           </div>
         </div>
       </form>
