@@ -38,6 +38,17 @@ function App() {
             </Link>
           </button>
         </div>
+        <p style="color: black;">
+          Copyright &copy;2024 Authors; Designed by,
+          <span style="opacity: 0.8; text-transform: uppercase; font-weight: 300; margin: 0px 5px;">
+            <a
+              style=" text-decoration: none; color: black;"
+              href="https://github.com/PaulDeUlloa"
+            >
+              p. de ulloa
+            </a>
+          </span>
+        </p>
       </div>
 
       <Routes>
