@@ -168,7 +168,7 @@ body{
   gap: 10px;
 }
 
-/* GET STARTED */
+/* GET STARTED START */
 
 #getStartedBtnStyling{
   text-decoration: none;
@@ -183,13 +183,8 @@ body{
   margin-top: 100px;
   margin-bottom: 100px;
 }
+/* GET STARTED END */
 
-/* #getStartedBackgroundImage{
-  background-image: url(images/author-picture.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-} */
 
 /* Create Page */
 
@@ -212,7 +207,7 @@ body{
   background-image: linear-gradient( to bottom ,rgb(234, 203, 203), rgb(185, 109, 55), rgb(234, 203, 203));
 }
 
-/* Carousel Wrapper */
+/* Carousel Wrapper start */
 #carouselWrapper{
   margin: auto 600px;
 }
@@ -234,3 +229,35 @@ body{
     margin: auto 100px;
   }
 }
+/* Carousel Wrapper End */
+
+
+/* Footer start */
+
+#footerStyling{
+  display: flex; 
+  justify-content: center; 
+  width: 100%; 
+  position: absolute; 
+  bottom: 0; 
+  height: 2.5rem;
+}
+
+#copyrightPTag{
+  color: white;
+}
+
+#copyrightSpanTag{
+  opacity: 0.8; 
+  text-transform: uppercase; 
+  font-weight: 300; 
+  margin: 0px 5px;
+}
+
+#copyrightAnchorTag{
+  text-decoration: none; 
+  color: white;
+}
+
+
+/* Footer end */
