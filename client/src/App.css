@@ -236,15 +236,18 @@ body{
 
 #footerStyling{
   display: flex; 
-  justify-content: center; 
-  width: 100%; 
+  justify-content: center;
+  align-items: center;
+  width: 97%; 
   position: absolute; 
   bottom: 0; 
   height: 2.5rem;
+  overflow: hidden;
 }
 
 #copyrightPTag{
   color: white;
+  margin-top: 10px;
 }
 
 #copyrightSpanTag{
@@ -252,11 +255,13 @@ body{
   text-transform: uppercase; 
   font-weight: 300; 
   margin: 0px 5px;
+  overflow: hidden;
 }
 
 #copyrightAnchorTag{
   text-decoration: none; 
   color: white;
+  overflow: hidden;
 }
 
 
