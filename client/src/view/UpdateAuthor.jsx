@@ -55,9 +55,13 @@ const UpdateAuthor = () => {
               <Link to="/authors" id="navbarLinksFontColor">
                 Cancel
               </Link>
-            </button>{" "}
-            <button class="btn btn-dark">
-              <input type="submit" value="Submit" />
+            </button>
+            <button
+              class="btn btn-dark"
+              type="submit"
+              id="navbarLinksFontColor"
+            >
+              Submit
             </button>
           </div>
         </div>
