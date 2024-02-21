@@ -51,10 +51,12 @@ const UpdateAuthor = () => {
             onChange={(e) => setName(e.target.value)}
           />
           <div>
-            <Link to="/authors">
-              <button>Cancel</button>
-            </Link>{" "}
-            <button>
+            <button class="btn btn-dark">
+              <Link to="/authors" id="navbarLinksFontColor">
+                Cancel
+              </Link>
+            </button>{" "}
+            <button class="btn btn-dark">
               <input type="submit" value="Submit" />
             </button>
           </div>
