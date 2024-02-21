@@ -210,8 +210,26 @@ body{
 
 /* Carousel Wrapper start */
 #carouselWrapper{
-  margin: auto 700px;
+  margin: auto 900px;
   
+}
+
+@media screen and (max-width: 2130px) { 
+  #carouselWrapper{
+    margin: auto 850px;
+  }
+}
+
+@media screen and (max-width: 2030px) { 
+  #carouselWrapper{
+    margin: auto 800px;
+  }
+}
+
+@media screen and (max-width: 1930px) { 
+  #carouselWrapper{
+    margin: auto 620px;
+  }
 }
 
 @media screen and (max-width: 1630px) { 
@@ -273,6 +291,8 @@ body{
 
 /* Footer end */
 
+/* Edit and Create Button Styling START */
+
 #buttonSpacing{
   margin-top: 10px;
   display: flex;
@@ -280,3 +300,5 @@ body{
   justify-content: column;
   gap: 10px;
 }
+
+/* Edit and Create Button Styling END */
