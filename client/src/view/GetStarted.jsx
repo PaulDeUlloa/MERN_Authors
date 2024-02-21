@@ -38,22 +38,6 @@ const GetStarted = () => {
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="1000">
               <img
-                src={require("./../images/jk_rowling.jpeg")}
-                class="d-block w-100"
-                alt="jk_rowling_picture"
-                width="100"
-                height="500"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>J.K. Rowling</h5>
-                <p>
-                  Ms. Rowling has a style of writing that paved a way into the
-                  annals of literary history.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img
                 src={require("./../images/king.jpeg")}
                 class="d-block w-100"
                 alt="stephen_king_picture"
@@ -81,6 +65,22 @@ const GetStarted = () => {
                 <p>
                   Kenneth M. Follett is a Welsh author of thrillers and
                   historical novels who has sold more than 160 million copies.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src={require("./../images/jk_rowling.jpeg")}
+                class="d-block w-100"
+                alt="jk_rowling_picture"
+                width="100"
+                height="500"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>J.K. Rowling</h5>
+                <p>
+                  Ms. Rowling has a style of writing that paved a way into the
+                  annals of literary history.
                 </p>
               </div>
             </div>
