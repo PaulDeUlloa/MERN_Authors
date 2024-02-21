@@ -209,7 +209,8 @@ body{
 
 /* Carousel Wrapper start */
 #carouselWrapper{
-  margin: auto 600px;
+  margin: auto 700px;
+  
 }
 
 @media screen and (max-width: 1630px) { 
@@ -228,6 +229,10 @@ body{
   #carouselWrapper{
     margin: auto 100px;
   }
+}
+
+.carousel-caption{
+  color: white;
 }
 /* Carousel Wrapper End */
 

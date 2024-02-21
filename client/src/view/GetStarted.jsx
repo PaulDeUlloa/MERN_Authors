@@ -12,11 +12,11 @@ const GetStarted = () => {
         </button>
       </div>
       <div id="carouselWrapper">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
             <button
               type="button"
-              data-bs-target="#carouselExampleDark"
+              data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="0"
               class="active"
               aria-current="true"
@@ -24,25 +24,25 @@ const GetStarted = () => {
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleDark"
+              data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="1"
               aria-label="Slide 2"
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleDark"
+              data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
+            <div class="carousel-item active" data-bs-interval="1000">
               <img
                 src={require("./../images/jk_rowling.jpeg")}
                 class="d-block w-100"
                 alt="jk_rowling_picture"
                 width="100"
-                height="400"
+                height="500"
               />
               <div class="carousel-caption d-none d-md-block">
                 <h5>J.K. Rowling</h5>
@@ -54,11 +54,11 @@ const GetStarted = () => {
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <img
-                src={require("./../images/stephen_king.jpeg")}
+                src={require("./../images/king.jpeg")}
                 class="d-block w-100"
                 alt="stephen_king_picture"
                 width="100"
-                height="400"
+                height="500"
               />
               <div class="carousel-caption d-none d-md-block">
                 <h5>Stephen King</h5>
@@ -68,13 +68,13 @@ const GetStarted = () => {
                 </p>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="2000">
               <img
-                src={require("./../images/ken_follett.jpeg")}
+                src={require("./../images/ken_follett2.jpeg")}
                 class="d-block w-100"
                 alt="ken_follet_picture"
                 width="100"
-                height="400"
+                height="500"
               />
               <div class="carousel-caption d-none d-md-block">
                 <h5>Ken Follet</h5>
@@ -88,7 +88,7 @@ const GetStarted = () => {
           <button
             class="carousel-control-prev"
             type="button"
-            data-bs-target="#carouselExampleDark"
+            data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -97,7 +97,7 @@ const GetStarted = () => {
           <button
             class="carousel-control-next"
             type="button"
-            data-bs-target="#carouselExampleDark"
+            data-bs-target="#carouselExampleCaptions"
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
