@@ -50,7 +50,7 @@ const UpdateAuthor = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          <div>
+          <div id="buttonSpacing">
             <button class="btn btn-dark">
               <Link to="/authors" id="navbarLinksFontColor">
                 Cancel
