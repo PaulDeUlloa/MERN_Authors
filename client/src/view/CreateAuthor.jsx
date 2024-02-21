@@ -38,14 +38,18 @@ const CreateAuthor = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          <div id="newAuthorButtonSpacing">
-            <Link to="/authors">
-              <button id="cancelSubmitButtonsFont" class="btn btn-light">
+          <div id="buttonSpacing">
+            <button class="btn btn-dark">
+              <Link to="/authors" id="navbarLinksFontColor">
                 Cancel
-              </button>
-            </Link>
-            <button id="createSubmitButton" class="btn btn-light">
-              <input type="submit" value="Submit" id="testDecorationSubmit" />
+              </Link>
+            </button>
+            <button
+              class="btn btn-dark"
+              type="submit"
+              id="navbarLinksFontColor"
+            >
+              Submit
             </button>
           </div>
         </div>
