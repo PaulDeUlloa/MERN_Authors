@@ -31,13 +31,14 @@ const CreateAuthor = () => {
       <h2 id="createPageFont">Add a new author:</h2>
       <form onSubmit={submitHandler}>
         <div>
-          <label>Name: </label>
-          <br></br>
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
+          <div id="editAndCreateLabelSpacing">
+            <label id="updateAndEditLabels">Name: </label>
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </div>
           <div id="buttonSpacing">
             <button class="btn btn-dark">
               <Link to="/authors" id="navbarLinksFontColor">

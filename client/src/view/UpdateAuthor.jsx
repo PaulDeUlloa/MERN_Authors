@@ -43,7 +43,7 @@ const UpdateAuthor = () => {
       <h2 id="editTitleColoring">Edit this author:</h2>
       <form onSubmit={submitHandler}>
         <div>
-          <div id="editAndDeleteLabelSpacing">
+          <div id="editAndCreateLabelSpacing">
             <label id="updateAndEditLabels">Name: </label>
             <input
               type="text"

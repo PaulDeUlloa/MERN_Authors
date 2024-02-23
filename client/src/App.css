@@ -307,7 +307,7 @@ body{
   color: white;
 }
 
-#editAndDeleteLabelSpacing{
+#editAndCreateLabelSpacing{
   display: flex;
   flex-direction: row;
   align-items: center;
