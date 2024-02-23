@@ -145,6 +145,7 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin: 50px 0px;
 }
 
 #createPageCentering{
@@ -152,10 +153,11 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin: 50px 0px;
 }
 
 #createPageFont{
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 #cancelSubmitButtonsFont{
