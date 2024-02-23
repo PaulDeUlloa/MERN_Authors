@@ -36,7 +36,7 @@
 }
 
 body{
-  background-color: rgb(22,44,79);
+  background-image: linear-gradient(to right, #09203F  , #537895);
 }
 
 #navBar{
@@ -203,9 +203,9 @@ body{
   color: red;
 }
 
-#allAuthorsBgColor{
+/* #allAuthorsBgColor{
   background-image: linear-gradient( to bottom ,rgb(234, 203, 203), rgb(185, 109, 55), rgb(234, 203, 203));
-}
+} */
 
 /* Carousel Wrapper start */
 #carouselWrapper{
