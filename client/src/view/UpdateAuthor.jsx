@@ -43,13 +43,14 @@ const UpdateAuthor = () => {
       <h2 id="editTitleColoring">Edit this author:</h2>
       <form onSubmit={submitHandler}>
         <div>
-          <label>Name: </label>
-          <br></br>
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
+          <div id="editAndDeleteLabelSpacing">
+            <label id="updateAndEditLabels">Name: </label>
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </div>
           <div id="buttonSpacing">
             <button class="btn btn-dark">
               <Link to="/authors" id="navbarLinksFontColor">
