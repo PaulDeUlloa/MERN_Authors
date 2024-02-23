@@ -316,3 +316,10 @@ body{
   justify-content: center;
   gap: 10px;
 }
+
+#editAndCreateInputAndButtonsCentering{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
