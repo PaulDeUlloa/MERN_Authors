@@ -113,6 +113,7 @@ body{
 
 #editTitleColoring{
   color: rgb(255, 255, 255);
+  margin-bottom: 20px;
 }
 
 #editDeleteButtonsFont{
@@ -158,6 +159,7 @@ body{
 
 #createPageFont{
   color: rgb(255, 255, 255);
+  margin-bottom: 20px;
 }
 
 #cancelSubmitButtonsFont{
@@ -303,8 +305,6 @@ body{
   gap: 10px;
 }
 
-/* Edit and Create Button Styling END */
-
 #updateAndEditLabels{
   color: white;
 }
@@ -323,3 +323,6 @@ body{
   justify-content: center;
   align-items: center;
 }
+
+/* Edit and Create Button Styling END */
+

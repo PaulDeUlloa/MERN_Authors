@@ -30,7 +30,7 @@ const CreateAuthor = () => {
     <div id="createPageCentering">
       <h2 id="createPageFont">Add a new author:</h2>
       <form onSubmit={submitHandler}>
-        <div>
+        <div id="editAndCreateInputAndButtonsCentering">
           <div id="editAndCreateLabelSpacing">
             <label id="updateAndEditLabels">Name: </label>
             <input
