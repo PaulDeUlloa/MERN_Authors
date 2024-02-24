@@ -37,13 +37,28 @@
 
 body{
   background-image: linear-gradient(to right, #09203F  , #537895);
+  
+}
+
+#splash{
+  width: 500px;
+  height: 500px;
+  background: 
+  repeating-conic-gradient(#00f 0 3%, #0000 0 11%) #fff,
+  repeating-conic-gradient(#00f 0 3%, #0000 0 11%) #fff,
+  repeating-conic-gradient(#00f 0 3%, #0000 0 11%) #fff,
+  repeating-conic-gradient(#00f 0 3%, #0000 0 11%) #fff,
+  radial-gradient(#000 22%, #0000 0), #fff;
+  mix-blend-mode: darken;
+  filter: blur(20px) contrast(100) brightness(1) grayscale(1);
+  box-shadow: 0 0 0 50px #fff;
 }
 
 #navBar{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-image: linear-gradient(to right, #D8B5FF  , #1EAE98);
+  background-color: white;
   margin: 20px;
   padding: 20px;
   align-items: center;
@@ -67,7 +82,7 @@ body{
 }
 
 #favAuthorsColoring{
-  color: rgb(255, 255, 255);
+  color: #000000;
   font-weight: 800;
 }
 
