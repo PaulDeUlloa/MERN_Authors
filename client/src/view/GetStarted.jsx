@@ -5,7 +5,7 @@ const GetStarted = () => {
   return (
     <div id="getStartedBackgroundImage">
       <div id="getStartedPage">
-        <button class="btn btn-light">
+        <button id="getStartedIndex" class="btn btn-light">
           <Link to="/authors" id="getStartedBtnStyling">
             GET STARTED
           </Link>

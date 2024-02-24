@@ -49,7 +49,10 @@ function App() {
           </p>
         </footer>
       </div>
-      <div id="splash">splash here</div>
+      <div id="splash1"></div>
+      <div id="splash2"></div>
+      <div id="splash3"></div>
+      <div id="splash4"></div>
 
       <Routes>
         <Route path="/" element={<GetStarted />} />
