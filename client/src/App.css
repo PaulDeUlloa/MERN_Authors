@@ -40,6 +40,8 @@ body{
   
 }
 
+/* Splashes STARTS HERE */
+
 #splash1{
   width: 300px;
   height: 300px;
@@ -139,6 +141,7 @@ body{
   left: 45%;
   z-index: -1;
 }
+/* Splashes ENDS HERE */
 
 /* Splash inspiration from https://alvaromontoro.com/blog/68042/shapes-in-css */
 
