@@ -142,6 +142,26 @@ body{
   z-index: -1;
 }
 
+#splash6{
+  width: 300px;
+  height: 300px;
+  background: 
+    repeating-conic-gradient(#000 0 3%, #0000 0 11%),
+    repeating-conic-gradient(#0000 0 5%, #000 0 7%) 50% / 60% 60%,
+    repeating-conic-gradient(#0000 0 7%, #000 0 9%) 50% / 70% 9%,
+    
+    radial-gradient(#000 22%, #0000 0), 
+    #fff;
+  mix-blend-mode: darken;
+  filter: blur(8px) contrast(100) brightness(1) grayscale(1);
+  box-shadow: 0 0 0 50px #fff;
+  rotate: 20deg;
+  position: fixed;
+  top: -5%;
+  left: 45%;
+  z-index: -1;
+}
+
 
 
 @media screen and (max-width: 1000px) { 
