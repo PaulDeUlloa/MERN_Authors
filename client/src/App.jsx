@@ -29,7 +29,7 @@ function App() {
         <div id="navbarButtonsSpacing">
           <button class="btn btn-dark">
             <Link to="/authors" id="navbarLinksFontColor">
-              All Quotes
+              All Authors
             </Link>
           </button>
           <button class="btn btn-dark">
