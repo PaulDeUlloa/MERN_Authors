@@ -282,6 +282,12 @@ body{
   margin-bottom: 20px;
 }
 
+#createLinksFontColor{
+  text-decoration: none;
+  color:rgb(0, 0, 0);
+  font-weight: 650;
+}
+
 #cancelSubmitButtonsFont{
   font-weight: 700;
   font-family:Arial, Helvetica, sans-serif;
