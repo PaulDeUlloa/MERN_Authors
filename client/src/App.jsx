@@ -54,6 +54,7 @@ function App() {
       <div id="splash3"></div>
       <div id="splash4"></div>
       <div id="splash5"></div>
+      <div id="splash6"></div>
 
       <Routes>
         <Route path="/" element={<GetStarted />} />
