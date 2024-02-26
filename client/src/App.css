@@ -141,6 +141,14 @@ body{
   left: 45%;
   z-index: -1;
 }
+
+
+
+@media screen and (max-width: 1000px) { 
+  #splash5{
+    display: none;
+  }
+}
 /* Splashes ENDS HERE */
 
 /* Splash inspiration from https://alvaromontoro.com/blog/68042/shapes-in-css */
