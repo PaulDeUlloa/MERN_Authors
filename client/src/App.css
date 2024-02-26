@@ -177,8 +177,8 @@ body{
   box-shadow: 0 0 0 50px #fff;
   rotate: 20deg;
   position: fixed;
-  top: 40%;
-  left: 30%;
+  bottom: 40%;
+  right: 30%;
   z-index: -1;
 }
 
