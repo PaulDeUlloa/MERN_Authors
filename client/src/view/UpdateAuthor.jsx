@@ -52,15 +52,15 @@ const UpdateAuthor = () => {
             />
           </div>
           <div id="buttonSpacing">
-            <button class="btn btn-dark">
-              <Link to="/authors" id="navbarLinksFontColor">
+            <button class="btn btn-light">
+              <Link to="/authors" id="createAndEditLinksFontColor">
                 Cancel
               </Link>
             </button>
             <button
-              class="btn btn-dark"
+              class="btn btn-light"
               type="submit"
-              id="navbarLinksFontColor"
+              id="createAndEditLinksFontColor"
             >
               Submit
             </button>
