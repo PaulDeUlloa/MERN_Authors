@@ -4,7 +4,7 @@ import Dashboard from "./view/Dashboard";
 import CreateAuthor from "./view/CreateAuthor";
 import UpdateAuthor from "./view/UpdateAuthor";
 import GetStarted from "./view/GetStarted";
-import Details from "./view/Details";
+import Detail from "./view/Detail";
 
 function App() {
   return (
@@ -63,7 +63,7 @@ function App() {
         <Route path="/authors" element={<Dashboard />} />
         <Route path="/authors/new" element={<CreateAuthor />} />
         <Route path="/authors/:id/edit" element={<UpdateAuthor />} />
-        <Route path="/authors/:id" element={<Details />} />
+        <Route path="/authors/:id" element={<Detail />} />
       </Routes>
     </div>
   );
