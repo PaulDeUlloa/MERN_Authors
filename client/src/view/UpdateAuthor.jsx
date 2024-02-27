@@ -51,6 +51,7 @@ const UpdateAuthor = () => {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              size="22"
             />
           </div>
           <div id="editAndCreateLabelSpacing">
@@ -60,7 +61,7 @@ const UpdateAuthor = () => {
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               rows="3"
-              cols="25"
+              cols="24"
             />
           </div>
           <div id="buttonSpacing">

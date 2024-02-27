@@ -471,11 +471,11 @@ body{
 /* Edit and Create Button Styling START */
 
 #buttonSpacing{
-  margin-top: 10px;
+  margin-top: 15px;
   display: flex;
   align-items: center;
-  justify-content: column;
-  gap: 10px;
+  justify-content: center;
+  gap: 20px;
 }
 
 #updateAndEditLabels{
@@ -486,15 +486,16 @@ body{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 10px;
 }
 
 #editAndCreateInputAndButtonsCentering{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: normal;
+  gap: 15px;
 }
 
 /* Edit and Create Button Styling END */
