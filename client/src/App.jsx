@@ -4,6 +4,7 @@ import Dashboard from "./view/Dashboard";
 import CreateAuthor from "./view/CreateAuthor";
 import UpdateAuthor from "./view/UpdateAuthor";
 import GetStarted from "./view/GetStarted";
+import Details from "./view/Details";
 
 function App() {
   return (
@@ -62,6 +63,7 @@ function App() {
         <Route path="/authors" element={<Dashboard />} />
         <Route path="/authors/new" element={<CreateAuthor />} />
         <Route path="/authors/:id/edit" element={<UpdateAuthor />} />
+        <Route path="/authors/:id" element={<Details />} />
       </Routes>
     </div>
   );
