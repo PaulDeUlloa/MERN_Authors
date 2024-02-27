@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 const UpdateAuthor = () => {
   const [name, setName] = useState("");
+  const [description, setDescription] = useState("");
 
   const { id } = useParams();
 
@@ -18,6 +19,7 @@ const UpdateAuthor = () => {
       .then((res) => {
         const oneAuthor = res.data;
         setName(oneAuthor.name);
+        setDescription(oneAuthor.description);
       })
       .catch((err) => console.log(err));
   }, []);
@@ -26,7 +28,7 @@ const UpdateAuthor = () => {
     e.preventDefault();
 
     axios
-      .put(`http://localhost:8000/api/authors/${id}`, { name })
+      .put(`http://localhost:8000/api/authors/${id}`, { name, description })
       .then(() => navigate("/authors"))
       .catch((err) => {
         const errResponse = err.response.data.errors;
@@ -49,6 +51,16 @@ const UpdateAuthor = () => {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
+            />
+          </div>
+          <div id="editAndCreateLabelSpacing">
+            <label id="updateAndEditLabels">Description: </label>
+            <textarea
+              type="text"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+              rows="3"
+              cols="25"
             />
           </div>
           <div id="buttonSpacing">
