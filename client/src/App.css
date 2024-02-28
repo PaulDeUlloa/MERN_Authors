@@ -356,8 +356,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 45px 0;
   z-index: 10;
 }
 
@@ -367,7 +366,7 @@ body{
   align-items: center;
   color: white;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* GET STARTED END */
