@@ -11,6 +11,13 @@ const GetStarted = () => {
           </Link>
         </button>
       </div>
+      <div id="featuredHeaderStyling">
+        <h1>Featured Authors</h1>
+        <p>
+          Authors that are posted to our page have a chance of being featured on
+          our main page carousel
+        </p>
+      </div>
       <div id="carouselWrapper">
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">

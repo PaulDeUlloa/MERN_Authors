@@ -361,6 +361,15 @@ body{
   z-index: 10;
 }
 
+#featuredHeaderStyling{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 /* GET STARTED END */
 
 
@@ -525,3 +534,4 @@ body{
   gap: 15px;
 }
 /* Details page styling END */
+
