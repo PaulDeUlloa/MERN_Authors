@@ -42,7 +42,11 @@ const Dashboard = () => {
             return (
               <tr key={idx}>
                 <div id="tableDataSpacing">
-                  <td id="authorNameFont">{oneAuthor.name}</td>
+                  <td id="authorNameFont">
+                    <Link to={`/authors/${oneAuthor._id}`}>
+                      {oneAuthor.name}
+                    </Link>
+                  </td>
                   <td id="editDeleteSpacing">
                     <Link to={`/authors/${oneAuthor._id}/edit`}>
                       <button id="editDeleteButtonsFont" class="btn btn-light">
