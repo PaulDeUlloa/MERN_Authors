@@ -260,7 +260,7 @@ body{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 45px;
+  gap: 125px;
   margin: 5px;
 }
 
@@ -285,6 +285,7 @@ body{
   font-family:Arial, Helvetica, sans-serif;
   color: white;
   font-weight: 500;
+  text-decoration: underline;
 }
 
 #dashboardContentSpacing{
@@ -294,7 +295,7 @@ body{
 #tableHeaderSpacing{
   display: flex;
   flex-direction: row;
-  gap: 90px;
+  gap: 135px;
   font-family:Arial, Helvetica, sans-serif;
   font-size: x-large;
   color: rgb(255, 255, 255);
@@ -506,12 +507,21 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   color: white;
   width: 100%;
+  gap: 30px;
+  margin-top: 60px;
 }
 
 #homeButtonsFont{
     font-weight: 700;
     font-family:Arial, Helvetica, sans-serif;
 }
+
+#detailsTextAlignment{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+/* Details page styling END */

@@ -42,8 +42,8 @@ const Dashboard = () => {
             return (
               <tr key={idx}>
                 <div id="tableDataSpacing">
-                  <td id="authorNameFont">
-                    <Link to={`/authors/${oneAuthor._id}`}>
+                  <td>
+                    <Link id="authorNameFont" to={`/authors/${oneAuthor._id}`}>
                       {oneAuthor.name}
                     </Link>
                   </td>

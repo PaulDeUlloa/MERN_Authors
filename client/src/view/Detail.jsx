@@ -17,8 +17,12 @@ const Detail = (props) => {
 
   return (
     <div id="detailsPageCentering">
-      <p>Name: {oneAuthor.name}</p>
-      <p>Description: {oneAuthor.description}</p>
+      <div id="detailsTextAlignment">
+        <h2>Name: </h2>
+        <p>{oneAuthor.name}</p>
+        <h2>Description: </h2>
+        <p>{oneAuthor.description}</p>
+      </div>
       <Link to={"/authors"}>
         <button id="homeButtonsFont" class="btn btn-light">
           Home
