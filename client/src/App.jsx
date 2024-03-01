@@ -9,8 +9,9 @@ import Detail from "./view/Detail";
 function App() {
   return (
     <div className="App">
-      <div id="navBar">
-        <Link to="/">
+      <nav>
+        <input id="nav-toggle" type="checkbox" />
+        {/* <Link to="/">
           <svg
             id="bookLogoSvg"
             width="200"
@@ -26,21 +27,29 @@ function App() {
               <path d="M49.565 18.056L27.261 6.019s7.435-3.894 10.266-3.894 4.249.354 7.436.707S51.334.709 51.334.709L74.701 14.87s-6.021 1.77-8.852 1.77-5.664-1.77-9.204-1.417-7.079 2.833-7.079 2.833z" />
             </g>
           </svg>
-        </Link>
-        <h1 id="favAuthorsColoring">Favorite Authors</h1>
-        <div id="navbarButtonsSpacing">
-          <button class="btn btn-dark">
-            <Link to="/authors" id="navbarLinksFontColor">
+        </Link> */}
+        <h1 id="navName">Favorite Authors</h1>
+
+        <ul id="nav-links">
+          <li id="linksTag">
+            <Link to="/authors" id="linksColor">
               All Authors
             </Link>
-          </button>
-          <button class="btn btn-dark">
-            <Link to="/authors/new" id="navbarLinksFontColor">
+          </li>
+
+          <li id="linksTag">
+            <Link to="/authors/new" id="linksColor">
               Add Author
             </Link>
-          </button>
-        </div>
-      </div>
+          </li>
+        </ul>
+
+        <label for="nav-toggle" id="burger-icon">
+          <div id="line"></div>
+          <div id="line"></div>
+          <div id="line"></div>
+        </label>
+      </nav>
 
       <footer id="footerStyling">
         <p id="copyrightPTag">
