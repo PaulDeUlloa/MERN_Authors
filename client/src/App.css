@@ -227,7 +227,7 @@ nav #nav-links{
   float: right;
   margin: 0;
   padding: 0;
-  width: 25%;
+  width: 20%;
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -289,17 +289,6 @@ nav #nav-links #linksTag #linksColor:hover{
   letter-spacing: 1px;
 }
 
-@media screen and (max-width: 1800px){
-  nav #nav-links{
-      width: 45%;
-  }
-}
-
-@media screen and (max-width: 1600px){
-  nav #nav-links{
-      width: 52%;
-  }
-}
 
 @media screen and (max-width: 1425px){
   nav #navName{ 
@@ -478,13 +467,6 @@ nav #nav-links #linksTag #linksColor:hover{
   
 }
 
-#updatePageCentering{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 130px;
-}
 
 #createPageCentering{
   display: flex;
@@ -670,6 +652,16 @@ nav #nav-links #linksTag #linksColor:hover{
   color: white;
 }
 
+#updatePageCentering{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 140px;
+  background-color: rgba(26, 25, 25, 0.8);
+  padding: 20px;
+}
+
 #editAndCreateLabelSpacing{
   display: flex;
   flex-direction: row;
@@ -697,8 +689,8 @@ nav #nav-links #linksTag #linksColor:hover{
   color: white;
   width: 100%;
   gap: 30px;
-  margin-top: 60px;
-  background-color: black;
+  margin-top: 140px;
+  background-color: rgba(26, 25, 25, 0.8);
   padding: 20px;
 }
 
