@@ -207,7 +207,7 @@ nav{
   height: 70px;
   background: linear-gradient( to right, #ffffff, #585653);
   border: 2px solid rgb(0, 0, 0);
-  box-shadow: rgb(0, 0, 0) 0px 0px 4px 4px;
+  box-shadow: rgb(255, 255, 255) 0px 0px 4px 4px;
 }
 
 nav #navName{
@@ -227,7 +227,7 @@ nav #nav-links{
   float: right;
   margin: 0;
   padding: 0;
-  width: 40%;
+  width: 25%;
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -397,11 +397,11 @@ nav #nav-links #linksTag #linksColor.active{
 
 
 
-@media screen and (max-width: 600px) { 
+/* @media screen and (max-width: 600px) { 
   #bookLogoSvg{
     display: none;
   }
-}
+} */
 
 /* NavBar END */
 
@@ -481,7 +481,7 @@ nav #nav-links #linksTag #linksColor.active{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin: 50px 0px;
+  margin-top: 130px;
 }
 
 #createPageCentering{
@@ -489,7 +489,7 @@ nav #nav-links #linksTag #linksColor.active{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin: 50px 0px;
+  margin-top: 130px;
 }
 
 #createPageFont{
