@@ -207,6 +207,11 @@ body{
   align-items: center;
 }
 
+@media screen and (max-width: 600px) { 
+  #bookLogoSvg{
+    display: none;
+  }
+}
 
 #navbarButtonsSpacing{
   display: flex;

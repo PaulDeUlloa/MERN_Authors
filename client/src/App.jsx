@@ -12,6 +12,7 @@ function App() {
       <div id="navBar">
         <Link to="/">
           <svg
+            id="bookLogoSvg"
             width="200"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 76 29"
@@ -39,17 +40,19 @@ function App() {
             </Link>
           </button>
         </div>
-        <footer id="footerStyling">
-          <p id="copyrightPTag">
-            Copyright &copy;2024 Authors; Designed by,
-            <span id="copyrightSpanTag">
-              <a id="copyrightAnchorTag" href="https://github.com/PaulDeUlloa">
-                p. de ulloa
-              </a>
-            </span>
-          </p>
-        </footer>
       </div>
+
+      <footer id="footerStyling">
+        <p id="copyrightPTag">
+          Copyright &copy;2024 Authors; Designed by,
+          <span id="copyrightSpanTag">
+            <a id="copyrightAnchorTag" href="https://github.com/PaulDeUlloa">
+              p. de ulloa
+            </a>
+          </span>
+        </p>
+      </footer>
+
       <div id="splash1"></div>
       <div id="splash2"></div>
       <div id="splash3"></div>
