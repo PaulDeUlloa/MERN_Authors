@@ -197,6 +197,10 @@ body{
 
 /* NavBar START */
 
+#bookLogoSvg{
+  margin-right: 20px;
+}
+
 nav{
   position: fixed;
   z-index: 10;
@@ -289,6 +293,11 @@ nav #nav-links #linksTag #linksColor:hover{
   letter-spacing: 1px;
 }
 
+@media screen and (max-width: 1800px){
+  nav #nav-links{
+      width: 30%;
+  }
+}
 
 @media screen and (max-width: 1425px){
   nav #navName{ 
@@ -376,23 +385,11 @@ nav #nav-links #linksTag #linksColor:hover{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media screen and (max-width: 600px) { 
+@media screen and (max-width: 600px) { 
   #bookLogoSvg{
     display: none;
   }
-} */
+}
 
 /* NavBar END */
 
