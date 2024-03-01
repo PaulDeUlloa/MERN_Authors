@@ -4,13 +4,6 @@ import React from "react";
 const GetStarted = () => {
   return (
     <div id="getStartedBackgroundImage">
-      <div id="getStartedPage">
-        <button id="getStartedIndex" class="btn btn-light">
-          <Link to="/authors" id="getStartedBtnStyling">
-            GET STARTED
-          </Link>
-        </button>
-      </div>
       <div id="featuredHeaderStyling">
         <h1>Featured Authors</h1>
         <p>
@@ -111,6 +104,14 @@ const GetStarted = () => {
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+      </div>
+
+      <div id="getStartedPage">
+        <button id="getStartedIndex" class="btn btn-light">
+          <Link to="/authors" id="getStartedBtnStyling">
+            GET STARTED
+          </Link>
+        </button>
       </div>
     </div>
   );

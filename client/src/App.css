@@ -521,7 +521,7 @@ nav #nav-links #linksTag #linksColor:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 40px;
   z-index: 11;
 }
 
@@ -545,6 +545,7 @@ nav #nav-links #linksTag #linksColor:hover{
   color: white;
   width: 100%;
   margin-bottom: 10px;
+  margin-top: 100px;
 }
 
 /* GET STARTED END */
