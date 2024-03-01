@@ -698,6 +698,8 @@ nav #nav-links #linksTag #linksColor:hover{
   width: 100%;
   gap: 30px;
   margin-top: 60px;
+  background-color: black;
+  padding: 20px;
 }
 
 #homeButtonsFont{
