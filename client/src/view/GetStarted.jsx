@@ -49,7 +49,7 @@ const GetStarted = () => {
                 class="d-block w-100"
                 alt="stephen_king_picture"
                 width="100"
-                height="500"
+                height="400"
               />
               <div class="carousel-caption d-none d-md-block">
                 <h5>Stephen King</h5>
@@ -65,7 +65,7 @@ const GetStarted = () => {
                 class="d-block w-100"
                 alt="ken_follet_picture"
                 width="100"
-                height="500"
+                height="400"
               />
               <div class="carousel-caption d-none d-md-block">
                 <h5>Ken Follet</h5>
@@ -81,7 +81,7 @@ const GetStarted = () => {
                 class="d-block w-100"
                 alt="jk_rowling_picture"
                 width="100"
-                height="500"
+                height="400"
               />
               <div class="carousel-caption d-none d-md-block">
                 <h5>J.K. Rowling</h5>

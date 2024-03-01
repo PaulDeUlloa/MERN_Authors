@@ -517,24 +517,26 @@ nav #nav-links #linksTag #linksColor:hover{
 
 /* GET STARTED START */
 
+#getStartedPage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  z-index: 11;
+}
+
 #getStartedBtnStyling{
   text-decoration: none;
   color:rgb(0, 0, 0);
   font-weight: 650;
-  z-index: 10;
+  z-index: 11;
 }
 
 #getStartedIndex{
   z-index: 10;
 }
 
-#getStartedPage{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 45px 0;
-  z-index: 10;
-}
+
 
 #featuredHeaderStyling{
   display: flex;
