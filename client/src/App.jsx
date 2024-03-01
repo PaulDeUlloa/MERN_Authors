@@ -32,13 +32,13 @@ function App() {
 
         <ul id="nav-links">
           <li id="linksTag">
-            <Link to="/authors" id="linksColor">
+            <Link to="/authors" class="active" id="linksColor">
               All Authors
             </Link>
           </li>
 
           <li id="linksTag">
-            <Link to="/authors/new" id="linksColor">
+            <Link to="/authors/new" class="active" id="linksColor">
               Add Author
             </Link>
           </li>
