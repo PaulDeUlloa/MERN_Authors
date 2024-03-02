@@ -51,7 +51,7 @@ const UpdateAuthor = () => {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              size="23"
+              size="22"
             />
           </div>
           <div id="editAndCreateLabelSpacing">
