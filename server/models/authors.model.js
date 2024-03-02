@@ -5,12 +5,12 @@ const AuthorSchema = new mongoose.Schema(
     name: {
       type: String,
       required: [true, "Name is required."],
-      minLength: [3, "Authors name must be 3+ characters"],
+      minLength: [3, "Author name must be 3+ characters"],
     },
     description: {
       type: String,
       required: [true, "Description is required."],
-      minLength: [5, "Authors name must be 5+ characters"],
+      minLength: [10, "Author description must be 10+ characters"],
     },
   },
   { timestamps: true }

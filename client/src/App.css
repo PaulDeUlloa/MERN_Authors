@@ -565,6 +565,8 @@ nav #nav-links #linksTag #linksColor:hover{
 
 #errorMessagesColor{
   color: red;
+  font-size: large;
+  margin-top: 10px;
 }
 
 /* #allAuthorsBgColor{
