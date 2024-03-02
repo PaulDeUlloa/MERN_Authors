@@ -44,6 +44,12 @@ function App() {
               Add Author
             </Link>
           </li>
+          {/* Home button will not show until svg logo is gone and will appear in hamburger drop down. Per CSS, class="testSecondTag". */}
+          <li class="testSecondTag" id="linksTag">
+            <Link to="/" class="active" id="linksColor">
+              Home
+            </Link>
+          </li>
         </ul>
 
         <label for="nav-toggle" id="burger-icon">

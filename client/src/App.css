@@ -293,6 +293,12 @@ nav #nav-links #linksTag #linksColor:hover{
   letter-spacing: 1px;
 }
 
+@media screen and (min-width: 1425px){
+  .testSecondTag{ 
+      display: none;
+  }
+}
+
 @media screen and (max-width: 1800px){
   nav #nav-links{
       width: 30%;
@@ -393,14 +399,14 @@ nav #nav-links #linksTag #linksColor:hover{
 
 /* NavBar END */
 
+/* Dashboard Table START */
+
 #quotesTitle{
   color: rgb(255, 255, 255);
   margin-top: 40px;
   display: flex;
   justify-content: left;
   margin-left: 80px;
-  
-
 }
 
 #tableCentering{
@@ -461,8 +467,20 @@ nav #nav-links #linksTag #linksColor:hover{
   font-family:Arial, Helvetica, sans-serif;
   font-size: x-large;
   color: rgb(255, 255, 255);
-  
 }
+
+
+@media screen and (max-width: 380px){
+  #tableDataSpacing{
+    gap: 40px;
+  }
+
+  #tableHeaderSpacing{
+    gap: 45px;
+  }
+}
+
+/* Dashboard Table END */
 
 
 #createPageCentering{
@@ -514,7 +532,7 @@ nav #nav-links #linksTag #linksColor:hover{
 }
 
 #getStartedIndex{
-  z-index: 10;
+  z-index: 9;
 }
 
 

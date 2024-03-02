@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-const Detail = (props) => {
+const Detail = () => {
   const [oneAuthor, setOneAuthor] = useState({});
 
   const { id } = useParams();
