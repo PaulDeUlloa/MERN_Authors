@@ -5,6 +5,7 @@ require("dotenv").config();
 
 const port = process.env.PORT;
 const myFirstSecret = process.env.FIRST_SECRET_KEY;
+const jwt = require("jsonwebtoken");
 
 //* Import mongoose.config
 require("./config/mongoose.config");
