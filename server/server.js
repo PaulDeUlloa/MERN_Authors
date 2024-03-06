@@ -13,6 +13,15 @@ const payload = {
 
 const userToken = jwt.sign(payload, process.env.FIRST_SECRET_KEY);
 
+// Cookies in Express
+const cookieParser = require("cookie-parser");
+app.use(cookieParser());
+app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+
+res.cookie("mycookie", "mydata", { httpOnly: true }).json({
+  message: "This response has a cookie",
+});
+
 //* Import mongoose.config
 require("./config/mongoose.config");
 
