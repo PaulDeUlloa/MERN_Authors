@@ -627,12 +627,12 @@ nav #nav-links #linksTag #linksColor:hover{
   display: flex; 
   justify-content: center;
   align-items: center;
-  width: 97%; 
+  width: 100%; 
   position: absolute; 
   bottom: 0; 
   height: 2.5rem;
   overflow: hidden;
-  z-index: 10;
+  z-index: 9;
 }
 
 #copyrightPTag{
@@ -654,6 +654,12 @@ nav #nav-links #linksTag #linksColor:hover{
   overflow: hidden;
 }
 
+@media screen and (max-width: 400px) { 
+  #footerStyling{
+    width: 65%; 
+    left: 100px;
+  }
+}
 
 /* Footer end */
 
