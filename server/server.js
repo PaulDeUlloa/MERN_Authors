@@ -7,6 +7,12 @@ const port = process.env.PORT;
 const myFirstSecret = process.env.FIRST_SECRET_KEY;
 const jwt = require("jsonwebtoken");
 
+const payload = {
+  id: user._id,
+};
+
+const userToken = jwt.sign(payload, process.env.FIRST_SECRET_KEY);
+
 //* Import mongoose.config
 require("./config/mongoose.config");
 
