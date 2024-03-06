@@ -6,7 +6,7 @@ const GetStarted = () => {
     <div id="getStartedBackgroundImage">
       <div id="featuredHeaderStyling">
         <h1>Featured Authors</h1>
-        <p>
+        <p id="getStartedFeaturedAuthorsPTag">
           Authors that are posted to our page have a chance of being featured on
           our main page carousel
         </p>
