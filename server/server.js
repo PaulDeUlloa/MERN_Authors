@@ -4,6 +4,7 @@ const cors = require("cors");
 require("dotenv").config();
 
 const port = process.env.PORT;
+const myFirstSecret = process.env.FIRST_SECRET_KEY;
 
 //* Import mongoose.config
 require("./config/mongoose.config");
