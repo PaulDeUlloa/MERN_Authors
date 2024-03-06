@@ -37,6 +37,8 @@
 
 ## Features
 List the ready features here:
+- Users can login and register
+  <!-- used (JWTs) In order to keep track of who is logged in, we will be using JSON web tokens (JWTs). JWTs are a structured way to keep data secure and to make sure that data has not been tampered with along the request/response cycle. -->
 - Users can create and post their favorite author
 - Users can edit their author
 - Users can delete their author
