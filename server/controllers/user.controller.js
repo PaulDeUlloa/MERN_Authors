@@ -67,12 +67,13 @@ async function loginUser(req, res) {
   }
 }
 
-// register: (req, res) => {
-//   User.create(req.body)
-//     .then((user) => {
-//       req.json({ msg: "success!", user: user });
-//     })
-//     .catch((err) => res.json(err));
-// };
-
-// we created a new user with the data passed from the request via request.body. Then, we tried to save it. If the save was successful, we sent back a success message, along with the user instance. If it was not, then we sent the error as a response.
+async function getAllUsers(req, res) {
+  try {
+    const users = await User.find();
+    res.status(200).json({ users });
+  } catch (err) {
+    console.log(err);
+    res.status(400).json(err);
+  }
+}
+export { registerUser, loginUser, getAllUsers };
