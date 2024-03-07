@@ -1,22 +1,23 @@
 const bcrypt = require("bcrypt");
 
+const model = require("mongoose");
+const Schema = require("mongoose");
+
+const uniqueValidator = require("mongoose-unique-validator");
+
 //! The "10" inside the bcrypt.hash() function refers to the number of salt rounds that Bcrypt will use when generating a salt
-UserSchema.pre("save", function (next) {
+userSchema.pre("save", function (next) {
   bcrypt.hash(this.password, 10).then((hash) => {
     this.password = hash;
     next();
   });
 });
 
-const UserSchema = new mongoose.Schema(
+const userSchema = new Schema(
   {
-    firstName: {
+    username: {
       type: String,
       required: [true, "First name is required"],
-    },
-    lastName: {
-      type: String,
-      required: [true, "Last name is required"],
     },
     email: {
       type: String,
@@ -35,22 +36,23 @@ const UserSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const User = mongoose.model("User", UserSchema);
+const User = model("User", userSchema);
 
-module.exports = User;
+export default User;
 
 // Our UserSchema doesn't contain a field for confirmPassword. This code will allow us to compare our password with it.
 // We will make use of mongoose virtuals. (fields we don't want to save in MongoDB). We will chain calls to get and set to
 // the returned virtual object, allowing us to establish both a getter and a setter for the virtual field.
 
-UserSchema.virtual("confirmPassword")
+userSchema
+  .virtual("confirmPassword")
   .get(() => this._confirmPassword)
   .set((value) => (this._confirmPassword = value));
 
 // We then will need to make use of some Middleware to add in another validation.
 // Specifically we will be using the "pre hook" and having it run before validations.
 
-UserSchema.pre("validate", function (next) {
+userSchema.pre("validate", function (next) {
   if (this.password !== this.confirmPassword) {
     this.invalidate("confirmPassword", "Password must match confirm password");
   }
