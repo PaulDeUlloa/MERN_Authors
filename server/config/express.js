@@ -1,3 +1,5 @@
+//Es module import/export syntax! (These imports on the server side)
+
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";

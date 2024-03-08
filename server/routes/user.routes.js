@@ -1,7 +1,7 @@
-const Router = require("express");
-const loginUser = require("../controllers/user.controller");
-const registerUser = require("../controllers/user.controller");
-const getAllUsers = require("../controllers/user.controller");
+import { Router } from "express";
+import { loginUser } from "../controllers/user.controller";
+import { registerUser } from "../controllers/user.controller";
+import { getAllUsers } from "../controllers/user.controller";
 
 const userRouter = Router();
 

@@ -1,28 +1,29 @@
-const express = require("express");
-const app = express();
-const cors = require("cors");
-require("dotenv").config();
+import app from "./config/express";
+import connectToDb from "./config/mongoose.config";
+import dotenv from "dotenv";
 
-const port = process.env.PORT;
+dotenv.config();
+const PORT = process.env.PORT;
 
-// Cookies in Express
-const cookieParser = require("cookie-parser");
-app.use(cookieParser());
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+async function start() {
+  try {
+    await connectToDb();
+    //* Listening on port
+    app.listen(PORT, () => console.log(`✨Listening on port: ${PORT}✨`));
+  } catch (error) {
+    console.error("Error starting the server:", error);
+    process.exit(1);
+  }
+}
 
-res.cookie("mycookie", "mydata", { httpOnly: true }).json({
-  message: "This response has a cookie",
-});
+start();
 
 //* Import mongoose.config
-require("./config/mongoose.config");
+// require("./config/mongoose.config");
 
-app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+// app.use(cors());
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: true }));
 
 //* import routes
-require("./routes/authors.routes")(app);
-
-//* Listening on port
-app.listen(port, () => console.log(`✨Listening on port: ${port}✨`));
+// require("./routes/authors.routes")(app);
