@@ -52,12 +52,6 @@ async function updateAuthor(req, res) {
 }
 
 //! Delete
-module.exports.deleteAuthor = (req, res) => {
-  Author.deleteOne({ _id: req.params.id })
-    .then((status) => res.json(status))
-    .catch((err) => res.status(400).json(err));
-};
-
 async function deleteAuthor(req, res) {
   const { id } = req.params;
   console.log("deleting author", id);
@@ -70,3 +64,5 @@ async function deleteAuthor(req, res) {
     res.status(400).json(error);
   }
 }
+
+export { createAuthor, allAuthors, oneAuthor, updateAuthor, deleteAuthor };
