@@ -43,22 +43,36 @@ function CreateAuthor() {
           <div id="editAndCreateLabelSpacing">
             <label id="updateAndEditLabels">Name: </label>
             <input
+              name="name"
+              id="name"
               type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              value={author.name}
+              onChange={handleChange}
               size="23"
             />
           </div>
           <div id="editAndCreateLabelSpacing">
             <label id="updateAndEditLabels">Description: </label>
             <textarea
+              name="description"
+              id="description"
               type="text"
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
+              value={author.description}
+              onChange={handleChange}
               rows="3"
               cols="25"
             />
           </div>
+          {/* <div id="editAndCreateLabelSpacing">
+            <label id="updateAndEditLabels">Recommend: </label>
+            <input
+              name="recommend"
+              id="recommend"
+              type="checkbox"
+              checked={author.recommend}
+              onChange={handleCheck}
+            />
+          </div> */}
           <div id="buttonSpacing">
             <button class="btn btn-light">
               <Link to="/authors" id="createAndEditLinksFontColor">
