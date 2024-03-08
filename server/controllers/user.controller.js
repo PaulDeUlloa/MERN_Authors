@@ -2,7 +2,7 @@
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import dotenv from "dotenv";
-import User from "../models/user.model";
+import User from "../models/user.model.js";
 
 // Load .env contents
 dotenv.config();
@@ -37,7 +37,7 @@ async function registerUser(req, res) {
   }
 }
 
-// ^ The HTTP 201 Created success status response code indicates that the request has succeeded and has led to the creation of a resource.
+// ^ The HTTP 201 Created success status response code indicates that the request has succeeded and has led to the creation of a resource!
 
 async function loginUser(req, res) {
   try {

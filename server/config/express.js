@@ -3,8 +3,8 @@
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
-import authorsRouter from "../routes/authors.routes";
-import userRouter from "../routes/user.routes";
+import authorsRouter from "../routes/authors.routes.js";
+import userRouter from "../routes/user.routes.js";
 
 const app = express();
 

@@ -1,5 +1,5 @@
-import app from "./config/express";
-import connectToDb from "./config/mongoose.config";
+import app from "./config/express.js";
+import connectToDb from "./config/mongoose.config.js";
 import dotenv from "dotenv";
 
 dotenv.config();

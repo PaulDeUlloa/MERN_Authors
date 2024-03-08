@@ -1,4 +1,4 @@
-import Author from "../models/authors.model";
+import Author from "../models/authors.model.js";
 
 //! Create
 async function createAuthor(req, res) {
