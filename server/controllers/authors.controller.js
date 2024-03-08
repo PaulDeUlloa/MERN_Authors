@@ -1,35 +1,55 @@
 import Author from "../models/authors.model";
 
+//! Create
+async function createAuthor(req, res) {
+  try {
+    const newAuthor = await Author.create(req.body);
+    res.status(201).json(newAuthor);
+  } catch (error) {
+    console.log(error);
+    res.status(400).json(error);
+  }
+}
+
 //! Get All
-module.exports.allAuthors = (req, res) => {
-  Author.find()
-    .then((authorList) => res.json(authorList))
-    .catch((err) => res.status(400).json(err));
-};
+async function allAuthors(_, res) {
+  try {
+    const authorList = await Author.find({});
+    res.status(200).json(authorList);
+  } catch (error) {
+    console.log(error);
+    res.status(400).json(error);
+  }
+}
 
 //! Get One
-module.exports.oneAuthor = (req, res) => {
-  Author.findOne({ _id: req.params.id })
-    .then((oneAuthor) => res.json(oneAuthor))
-    .catch((err) => res.status(400).json(err));
-};
+async function oneAuthor(req, res) {
+  const { id } = req.params;
 
-//! Create
-module.exports.createAuthor = (req, res) => {
-  Author.create(req.body)
-    .then((newAuthor) => res.json(newAuthor))
-    .catch((err) => res.status(400).json(err));
-};
+  try {
+    const oneAuthor = await Author.findById(id);
+    res.status(200).json(oneAuthor);
+  } catch (error) {
+    console.log(error);
+    res.status(400).json(error);
+  }
+}
 
 //! Update
-module.exports.updateAuthor = (req, res) => {
-  Author.findOneAndUpdate({ _id: req.params.id }, req.body, {
-    new: true,
-    runValidators: true,
-  })
-    .then((updatedAuthor) => res.json(updatedAuthor))
-    .catch((err) => res.status(400).json(err));
-};
+async function updateAuthor(req, res) {
+  const { id } = req.params;
+
+  try {
+    const updateAuthor = await Author.findByIdAndUpdate(id, req.body, {
+      new: true,
+      runValidators: true,
+    });
+    res.status(200).json(updateAuthor);
+  } catch (error) {
+    console.log(error);
+    res.status(400).json(error);
+  }
+}
 
 //! Delete
 module.exports.deleteAuthor = (req, res) => {
@@ -37,3 +57,16 @@ module.exports.deleteAuthor = (req, res) => {
     .then((status) => res.json(status))
     .catch((err) => res.status(400).json(err));
 };
+
+async function deleteAuthor(req, res) {
+  const { id } = req.params;
+  console.log("deleting author", id);
+
+  try {
+    const deleteOne = await Author.findByIdAndDelete(id);
+    res.status(200).json(deleteOne);
+  } catch (error) {
+    console.log(error);
+    res.status(400).json(error);
+  }
+}
