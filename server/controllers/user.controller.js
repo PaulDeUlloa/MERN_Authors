@@ -1,7 +1,8 @@
 require("dotenv").config();
-const User = require("../models/user.model");
-const jwt = require("jsonwebtoken");
-const bcrypt = require("bcrypt");
+
+import User from "../models/user.model";
+import { jwt } from "jsonwebtoken";
+import bcrypt from "bcrypt";
 
 // Load .env contents
 const JWT_SECRET = process.env.JWT_SECRET;

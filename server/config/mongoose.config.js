@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const dbName = process.env.DB;
 const username = process.env.ATLAS_USERNAME;

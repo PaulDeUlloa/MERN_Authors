@@ -1,11 +1,7 @@
 import mongooseUniqueValidator from "mongoose-unique-validator";
-
-const bcrypt = require("bcrypt");
-
-const model = require("mongoose");
-const Schema = require("mongoose");
-
-const mongooseUniqueValidator = require("mongoose-unique-validator");
+import bcrypt from "bcrypt";
+import { model } from "mongoose";
+import { Schema } from "mongoose";
 
 //! email and password regex
 const EMAIL_REGEX = new RegExp(/^([\w-\.]+@([\w-]+\.)+[\w-]+)?$/);

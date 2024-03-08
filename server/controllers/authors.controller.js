@@ -1,4 +1,4 @@
-const Author = require("../models/authors.model");
+import Author from "../models/authors.model";
 
 //! Get All
 module.exports.allAuthors = (req, res) => {
