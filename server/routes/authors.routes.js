@@ -1,17 +1,36 @@
 import { Router } from "express";
 
-const AuthorController = require("../controllers/authors.controller");
+import {
+  createAuthor,
+  allAuthors,
+  oneAuthor,
+  updateAuthor,
+  deleteAuthor,
+} from "../controllers/authors.controller.js";
 
-module.exports = (app) => {
-  //* Establish each CRUD operation routes below:
+const authorsRouter = Router();
 
-  app.get("/api/authors", AuthorController.allAuthors);
+authorsRouter.route("/").post(createAuthor).get(allAuthors);
 
-  app.get("/api/authors/:id", AuthorController.oneAuthor);
+authorsRouter
+  .route("/:id")
+  .post(oneAuthor)
+  .put(updateAuthor)
+  .patch(updateAuthor)
+  .delete(deleteAuthor);
 
-  app.post("/api/authors", AuthorController.createAuthor);
+export default authorsRouter;
 
-  app.put("/api/authors/:id", AuthorController.updateAuthor);
+// module.exports = (app) => {
+//   //* Establish each CRUD operation routes below:
 
-  app.delete("/api/authors/:id", AuthorController.deleteAuthor);
-};
+//   app.get("/api/authors", AuthorController.allAuthors);
+
+//   app.get("/api/authors/:id", AuthorController.oneAuthor);
+
+//   app.post("/api/authors", AuthorController.createAuthor);
+
+//   app.put("/api/authors/:id", AuthorController.updateAuthor);
+
+//   app.delete("/api/authors/:id", AuthorController.deleteAuthor);
+// };
