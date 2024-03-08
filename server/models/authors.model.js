@@ -12,11 +12,10 @@ const AuthorSchema = new mongoose.Schema(
       required: [true, "Description is required."],
       minLength: [10, "Author description must be 10+ characters"],
     },
-    // recommend: {
-    //   type: Boolean ,
-    //   required: [true, "Description is required."],
-    //   minLength: [10, "Author description must be 10+ characters"],
-    // },
+    recommend: {
+      type: Boolean,
+      default: true,
+    },
   },
   { timestamps: true }
 );
