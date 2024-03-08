@@ -20,13 +20,12 @@ function CreateAuthor() {
     });
   };
 
-  // if we wanted a check Box, we should use this.
-  // const handleCheck = (e) => {
-  //   setAuthor({
-  //     ...author,
-  //     wouldRecommend: e.target.checked,
-  //   });
-  // };
+  const handleCheck = (e) => {
+    setAuthor({
+      ...author,
+      wouldRecommend: e.target.checked,
+    });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -63,7 +62,7 @@ function CreateAuthor() {
               cols="25"
             />
           </div>
-          {/* <div id="editAndCreateLabelSpacing">
+          <div id="editAndCreateLabelSpacing">
             <label id="updateAndEditLabels">Recommend: </label>
             <input
               name="recommend"
@@ -72,7 +71,7 @@ function CreateAuthor() {
               checked={author.recommend}
               onChange={handleCheck}
             />
-          </div> */}
+          </div>
           <div id="buttonSpacing">
             <button class="btn btn-light">
               <Link to="/authors" id="createAndEditLinksFontColor">
