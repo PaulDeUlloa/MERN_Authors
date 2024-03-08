@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import { model } from "mongoose";
 
 const AuthorSchema = new mongoose.Schema(
   {
@@ -20,6 +21,6 @@ const AuthorSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const Author = mongoose.model("Author", AuthorSchema);
+const Author = model("Author", AuthorSchema);
 
-module.exports = Author;
+export default Author;
