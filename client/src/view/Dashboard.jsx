@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { allAuthors, deleteAuthor } from "../services/author-service";
 
-const AllAuthors(){
+function AllAuthors() {
   const navigate = useNavigate();
   const [authorList, setAuthorList] = useState([]);
 
@@ -14,7 +14,7 @@ const AllAuthors(){
 
   const handleDelete = (authorId) => {
     deleteAuthor(authorId)
-      .then(() => navigate('/authors'))
+      .then(() => navigate("/authors"))
       .catch((err) => console.log(err));
   };
 
@@ -36,9 +36,9 @@ const AllAuthors(){
           </tr>
         </thead>
         <tbody id="dashboardContentSpacing">
-          {authorList.map((oneAuthor, idx) => {
+          {authorList.map((oneAuthor) => {
             return (
-              <tr key={idx}>
+              <tr key={oneAuthor._id}>
                 <div id="tableDataSpacing">
                   <td>
                     <Link id="authorNameFont" to={`/authors/${oneAuthor._id}`}>
@@ -69,6 +69,6 @@ const AllAuthors(){
       </table>
     </div>
   );
-};
+}
 
 export default AllAuthors;
