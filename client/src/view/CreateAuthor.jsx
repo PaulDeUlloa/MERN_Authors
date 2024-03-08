@@ -1,36 +1,44 @@
-import axios from "axios";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { createAuthor } from "../services/author-service";
 import { Link } from "react-router-dom";
 
-const CreateAuthor = () => {
-  const [name, setName] = useState("");
-  const [description, setDescription] = useState("");
+const initialAuthor = {
+  name: "",
+  description: "",
+};
 
+function CreateAuthor() {
+  const navigate = useNavigate();
+  const [author, setAuthor] = useState(initialAuthor);
   const [errors, setErrors] = useState([]);
 
-  const navigate = useNavigate();
+  const handleChange = (e) => {
+    setAuthor({
+      ...author,
+      [e.target.name]: e.target.value,
+    });
+  };
 
-  const submitHandler = (e) => {
+  // if we wanted a check Box, we should use this.
+  // const handleCheck = (e) => {
+  //   setAuthor({
+  //     ...author,
+  //     wouldRecommend: e.target.checked,
+  //   });
+  // };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    axios
-      .post(`http://localhost:8000/api/authors`, { name, description })
+    createAuthor(author)
       .then(() => navigate("/authors"))
-      .catch((err) => {
-        const errResponse = err.response.data.errors;
-        const errArr = [];
-        for (const key in errResponse) {
-          errArr.push(errResponse[key].message);
-        }
-        setErrors(errArr);
-      });
+      .catch((err) => console.log(err));
   };
 
   return (
     <div id="createPageCentering">
       <h2 id="createPageFont">Add a new author:</h2>
-      <form onSubmit={submitHandler}>
+      <form onSubmit={handleSubmit}>
         <div id="editAndCreateInputAndButtonsCentering">
           <div id="editAndCreateLabelSpacing">
             <label id="updateAndEditLabels">Name: </label>
@@ -76,6 +84,6 @@ const CreateAuthor = () => {
       })}
     </div>
   );
-};
+}
 
 export default CreateAuthor;
