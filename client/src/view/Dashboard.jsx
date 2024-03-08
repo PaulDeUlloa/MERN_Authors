@@ -1,32 +1,30 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { allAuthors, deleteAuthor } from "../services/author-service";
 
-const Dashboard = () => {
+const AllAuthors(){
+  const navigate = useNavigate();
   const [authorList, setAuthorList] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`http://localhost:8000/api/authors`)
-      .then((res) => setAuthorList(res.data))
+    allAuthors()
+      .then((authorList) => setAuthorList(authorList))
       .catch((err) => console.log(err));
   }, []);
 
-  const handleDelete = (deletedId) => {
-    axios
-      .delete(`http://localhost:8000/api/authors/${deletedId}`)
-      .then(() => {
-        removeFromDom(deletedId);
-      })
+  const handleDelete = (authorId) => {
+    deleteAuthor(authorId)
+      .then(() => navigate('/authors'))
       .catch((err) => console.log(err));
   };
+
   //* updates dom without refresh
-  const removeFromDom = (deletedId) => {
-    const filteredList = authorList.filter(
-      (eachAuthor, idx) => eachAuthor._id !== deletedId
-    );
-    setAuthorList(filteredList);
-  };
+  // const removeFromDom = (authorId) => {
+  //   const filteredList = authorList.filter(
+  //     (eachAuthor, idx) => eachAuthor._id !== authorId
+  //   );
+  //   setAuthorList(filteredList);
+  // };
 
   return (
     <div id="allAuthorsBgColor">
@@ -73,4 +71,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default AllAuthors;
