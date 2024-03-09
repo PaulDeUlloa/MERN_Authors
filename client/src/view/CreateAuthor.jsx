@@ -89,13 +89,13 @@ function CreateAuthor() {
           </div>
         </div>
       </form>
-      {errors.map((err, idx) => {
+      {/* {errors.map((err, idx) => {
         return (
           <p id="errorMessagesColor" key={idx}>
             {err}
           </p>
         );
-      })}
+      })} */}
     </div>
   );
 }
