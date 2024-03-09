@@ -6,7 +6,10 @@ import { Link } from "react-router-dom";
 const initialAuthor = {
   name: "",
   description: "",
+  recommend: "",
 };
+
+// TODO: recommend might need to be set as default true in initalAuthor above.
 
 function CreateAuthor() {
   const navigate = useNavigate();
