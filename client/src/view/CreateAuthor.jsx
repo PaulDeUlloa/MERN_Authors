@@ -6,15 +6,13 @@ import { Link } from "react-router-dom";
 const initialAuthor = {
   name: "",
   description: "",
-  recommend: "",
+  recommend: true,
 };
-
-// TODO: recommend might need to be set as default true in initalAuthor above.
 
 function CreateAuthor() {
   const navigate = useNavigate();
   const [author, setAuthor] = useState(initialAuthor);
-  const [errors, setErrors] = useState([]);
+  // const [errors, setErrors] = useState([]);
 
   const handleChange = (e) => {
     setAuthor({
@@ -26,7 +24,7 @@ function CreateAuthor() {
   const handleCheck = (e) => {
     setAuthor({
       ...author,
-      wouldRecommend: e.target.checked,
+      recommend: e.target.checked,
     });
   };
 
