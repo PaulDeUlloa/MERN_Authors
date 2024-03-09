@@ -13,7 +13,7 @@ function Register() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    registerUser()
+    registerUser(registerForm)
       .then((userData) => console.log(userData))
       .catch((err) => console.log(err));
   };
@@ -67,7 +67,7 @@ function Register() {
                 type="submit"
                 id="createAndEditLinksFontColor"
               >
-                Login
+                Register
               </button>
             </div>
           </form>
