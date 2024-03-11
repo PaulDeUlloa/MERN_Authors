@@ -5,9 +5,18 @@ const http = axios.create({
   baseURL: "http://localhost:8000/api",
 });
 
+const user = localStorage.getItem("user");
+const authConfig = {};
+
+if (user) {
+  authConfig.headers = {
+    Authorization: `Bearer: ${user.token}`,
+  };
+}
+
 async function createAuthor(author) {
   try {
-    const res = await http.post("/authors", author);
+    const res = await http.post("/authors", author, authConfig);
     return res.data;
   } catch (error) {
     throw error;
