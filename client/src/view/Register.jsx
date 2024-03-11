@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../context/AuthContext";
 import { registerUser } from "../services/user-service";
 
 const initialForm = {
@@ -10,11 +11,16 @@ const initialForm = {
 function Register() {
   const [registerForm, setRegisterForm] = useState(initialForm);
   const [errors, setErrors] = useState(initialForm);
+  const { dispatch } = useContext(AuthContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     registerUser(registerForm)
-      .then((userData) => console.log(userData))
+      .then((userData) => {
+        console.log(userData);
+        dispatch({ type: "LOGIN", payload: userData });
+        localStorage.setItem("user", JSON.stringify(userData));
+      })
       .catch((err) => console.log(err));
   };
 
