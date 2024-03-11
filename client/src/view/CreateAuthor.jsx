@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { createAuthor } from "../services/author-service";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
+import ErrorAlert from "../view/ErrorAlert";
 
 const initialAuthor = {
   name: "",
@@ -16,7 +17,7 @@ function CreateAuthor() {
   } = useContext(AuthContext);
   const navigate = useNavigate();
   const [author, setAuthor] = useState(initialAuthor);
-  // const [errors, setErrors] = useState([]);
+  const [errors, setErrors] = useState(null);
 
   //To protect our CreateAuthor route of ('/authors/new) we will leverage useContext & AuthContext & useEffect
   useEffect(() => {
@@ -43,12 +44,16 @@ function CreateAuthor() {
     e.preventDefault();
     createAuthor(author)
       .then(() => navigate("/authors"))
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+        setErrors(err?.response?.data?.errors);
+      });
   };
 
   return (
     <div id="createPageCentering">
       <h2 id="createPageFont">Add a new author:</h2>
+      {errors && <ErrorAlert message={errors} />}
       <form onSubmit={handleSubmit}>
         <div id="editAndCreateInputAndButtonsCentering">
           <div id="editAndCreateLabelSpacing">
