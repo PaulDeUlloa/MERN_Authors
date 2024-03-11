@@ -52,11 +52,11 @@ function NavBar() {
           </Link>
         </li>
 
-        <li id="linksTag">
-          <p class="active" id="linksColor">
-            {user ? <LoggedIn /> : <LoggedOut />}
-          </p>
-        </li>
+        <ul id="linksTag">
+          <li class="active" id="linksColor">
+            <a href="">{user ? <LoggedIn /> : <LoggedOut />}</a>
+          </li>
+        </ul>
       </ul>
 
       <label for="nav-toggle" id="burger-icon">

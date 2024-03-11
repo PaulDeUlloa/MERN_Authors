@@ -7,17 +7,20 @@ function LoggedIn() {
     state: { user },
   } = useContext(AuthContext);
 
+  const { dispatch } = useContext(AuthContext);
+
+  const handleLogout = () => {
+    dispatch({ type: "LOGOUT" });
+    localStorage.setItem("user", "null");
+  };
+
   return (
     <ul>
       <li>
-        <NavLink to="/authors" end>
-          All authors
-        </NavLink>
+        <NavLink to="/authors">All authors</NavLink>
       </li>
       <li>
-        <NavLink to="/authors/new" end>
-          Add a author
-        </NavLink>
+        <NavLink to="/authors/new">Add a author</NavLink>
       </li>
       <li>
         <details>
@@ -27,7 +30,7 @@ function LoggedIn() {
               <a>My Profile</a>
             </li>
             <li>
-              <a>Log out</a>
+              <button onClick={handleLogout}>Log out</button>
             </li>
           </ul>
         </details>
@@ -35,3 +38,5 @@ function LoggedIn() {
     </ul>
   );
 }
+
+export default LoggedIn;
