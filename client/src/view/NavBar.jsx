@@ -1,8 +1,14 @@
+import { useContext } from "react";
+import { AuthContext } from "../context/AuthContext";
 import { Link } from "react-router-dom";
 import LoggedIn from "./LoggedIn";
 import LoggedOut from "./LoggedOut";
 
-function Navbar() {
+function NavBar() {
+  const {
+    state: { user },
+  } = useContext(AuthContext);
+
   return (
     <nav>
       <input id="nav-toggle" type="checkbox" />
@@ -48,7 +54,7 @@ function Navbar() {
 
         <li id="linksTag">
           <p class="active" id="linksColor">
-            <LoggedOut />
+            {user ? <LoggedIn /> : <LoggedOut />}
           </p>
         </li>
       </ul>
@@ -62,4 +68,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavBar;
