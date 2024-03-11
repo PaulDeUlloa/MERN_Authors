@@ -1,12 +1,22 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useState, useContext, useEffect, useParams } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
 
 const Detail = () => {
+  const navigate = useNavigate();
   const [oneAuthor, setOneAuthor] = useState({});
-
+  const {
+    state: { user },
+  } = useContext(AuthContext);
   const { id } = useParams();
+
+  //To protect our detail route of ('/authors/id) we will leverage useContext & AuthContext & useEffect
+  useEffect(() => {
+    if (!user) {
+      navigate("/login");
+    }
+  });
 
   useEffect(() => {
     axios

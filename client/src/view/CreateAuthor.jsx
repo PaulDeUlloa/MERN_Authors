@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { createAuthor } from "../services/author-service";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
 
 const initialAuthor = {
   name: "",
@@ -10,9 +11,19 @@ const initialAuthor = {
 };
 
 function CreateAuthor() {
+  const {
+    state: { user },
+  } = useContext(AuthContext);
   const navigate = useNavigate();
   const [author, setAuthor] = useState(initialAuthor);
   // const [errors, setErrors] = useState([]);
+
+  //To protect our CreateAuthor route of ('/authors/new) we will leverage useContext & AuthContext & useEffect
+  useEffect(() => {
+    if (!user) {
+      navigate("/login");
+    }
+  });
 
   const handleChange = (e) => {
     setAuthor({

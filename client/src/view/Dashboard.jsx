@@ -6,6 +6,16 @@ import { AuthContext } from "../context/AuthContext";
 function AllAuthors() {
   const navigate = useNavigate();
   const [authorList, setAuthorList] = useState([]);
+  const {
+    state: { user },
+  } = useContext(AuthContext);
+
+  //To protect our dashboard route of ('/authors) we will leverage useContext & AuthContext & useEffect
+  useEffect(() => {
+    if (!user) {
+      navigate("/login");
+    }
+  });
 
   useEffect(() => {
     allAuthors()
@@ -26,8 +36,6 @@ function AllAuthors() {
   //   );
   //   setAuthorList(filteredList);
   // };
-
-  //To protect our routes we will leverage useContext & AuthContext
 
   return (
     <div id="allAuthorsBgColor">
