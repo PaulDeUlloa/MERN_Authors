@@ -55,7 +55,7 @@ function Login() {
                 <input
                   name="password"
                   id="password"
-                  type="text"
+                  type="password"
                   value={loginForm.password}
                   onChange={handleChange}
                 />

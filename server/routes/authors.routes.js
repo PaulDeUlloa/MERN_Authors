@@ -1,4 +1,5 @@
 import Router from "express";
+import authorize from "../middleware/authorize.js";
 
 import {
   createAuthor,
@@ -10,8 +11,14 @@ import {
 
 const authorsRouter = Router();
 
-authorsRouter.route("/").post(createAuthor).get(allAuthors);
+// prettier-ignore
+authorsRouter
+  .route("/")
+  .post(authorize, createAuthor)
+  .get(allAuthors);
+//! To protect the createRoute on the backend(server) we use the authorize file in the middleware folder.
 
+// prettier-ignore
 authorsRouter
   .route("/:id")
   .post(oneAuthor)
