@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { registerUser } from "../services/user-service";
+import { useNavigate } from "react-router-dom";
 
 const initialForm = {
   username: "",
@@ -9,6 +10,7 @@ const initialForm = {
 };
 
 function Register() {
+  const navigate = useNavigate();
   const [registerForm, setRegisterForm] = useState(initialForm);
   const [errors, setErrors] = useState(initialForm);
   const { dispatch } = useContext(AuthContext);
@@ -20,6 +22,7 @@ function Register() {
         console.log(userData);
         dispatch({ type: "LOGIN", payload: userData });
         localStorage.setItem("user", JSON.stringify(userData));
+        navigate("/");
       })
       .catch((err) => console.log(err));
   };

@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 
@@ -8,10 +8,12 @@ function LoggedIn() {
   } = useContext(AuthContext);
 
   const { dispatch } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
     localStorage.setItem("user", "null");
+    navigate("/login");
   };
 
   return (

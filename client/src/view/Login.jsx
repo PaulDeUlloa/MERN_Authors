@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { loginUser } from "../services/user-service";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const initialForm = {
   email: "",
@@ -8,6 +9,7 @@ const initialForm = {
 };
 
 function Login() {
+  const navigate = useNavigate();
   const [loginForm, setLoginForm] = useState(initialForm);
   const [errors, setErrors] = useState(initialForm);
   const { dispatch } = useContext(AuthContext);
@@ -19,6 +21,7 @@ function Login() {
         console.log(userData);
         dispatch({ type: "LOGIN", payload: userData });
         localStorage.setItem("user", JSON.stringify(userData));
+        navigate("/authors");
       })
       .catch((err) => console.log(err));
   };

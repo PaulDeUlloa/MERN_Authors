@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import { useContext, useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { allAuthors, deleteAuthor } from "../services/author-service";
+import { AuthContext } from "../context/AuthContext";
 
 function AllAuthors() {
   const navigate = useNavigate();
@@ -25,6 +26,8 @@ function AllAuthors() {
   //   );
   //   setAuthorList(filteredList);
   // };
+
+  //To protect our routes we will leverage useContext & AuthContext
 
   return (
     <div id="allAuthorsBgColor">
