@@ -2,13 +2,10 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { loginUser } from "../services/user-service";
 
-// registerUser(registerForm)
-//       .then((userData) => {
-//         console.log(userData);
-//         dispatch({ type: "LOGIN", payload: userData });
-//         localStorage.setItem("user", JSON.stringify(userData));
-//       })
-//       .catch((err) => console.log(err));
+const initialForm = {
+  email: "",
+  password: "",
+};
 
 function Login() {
   return (
