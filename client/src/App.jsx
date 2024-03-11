@@ -6,6 +6,7 @@ import UpdateAuthor from "./view/UpdateAuthor";
 import GetStarted from "./view/GetStarted";
 import Detail from "./view/Detail";
 import Register from "./view/Register";
+import Login from "./view/Login";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="/authors/:id/edit" element={<UpdateAuthor />} />
         <Route path="/authors/:id" element={<Detail />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </div>
   );

@@ -738,3 +738,12 @@ nav #nav-links #linksTag #linksColor:hover{
 }
 /* Details page styling END */
 
+/* Login/ Reg Styling START */
+
+#loginWrapper, #registerWrapper{
+  color: white;
+}
+
+
+
+/* Login/ Reg Styling END */
