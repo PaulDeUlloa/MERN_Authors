@@ -2,8 +2,8 @@ import { useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { createAuthor } from "../services/author-service";
 import { Link } from "react-router-dom";
-import { AuthContext } from "../context/AuthContext";
-import ErrorAlert from "../view/ErrorAlert";
+import { AuthContext } from "../context/AuthContext.jsx";
+import ErrorAlert from "../view/ErrorAlert.jsx";
 
 const initialAuthor = {
   name: "",
@@ -105,13 +105,6 @@ function CreateAuthor() {
           </div>
         </div>
       </form>
-      {/* {errors.map((err, idx) => {
-        return (
-          <p id="errorMessagesColor" key={idx}>
-            {err}
-          </p>
-        );
-      })} */}
     </div>
   );
 }

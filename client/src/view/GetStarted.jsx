@@ -1,7 +1,21 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import React from "react";
+import { AuthContext } from "../context/AuthContext.jsx";
+import { useContext, useEffect } from "react";
 
 const GetStarted = () => {
+  const navigate = useNavigate();
+  const {
+    state: { user },
+  } = useContext(AuthContext);
+
+  //To protect our route we will leverage useContext & AuthContext & useEffect.
+  useEffect(() => {
+    if (!user) {
+      navigate("/login");
+    }
+  });
+
   return (
     <div id="getStartedBackgroundImage">
       <div id="featuredHeaderStyling">
