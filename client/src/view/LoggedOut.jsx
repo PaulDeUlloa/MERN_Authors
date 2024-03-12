@@ -2,14 +2,18 @@ import { NavLink } from "react-router-dom";
 
 function LoggedOut() {
   return (
-    <ul>
-      <li>
-        <NavLink to="/login">Login</NavLink>
+    <div id="loggedOutNavBarWrapper">
+      <li id="linksColor" class="active">
+        <NavLink id="loggedInNavBarButton" to="/login">
+          Login
+        </NavLink>
       </li>
-      <li>
-        <NavLink to="/register">Register</NavLink>
+      <li id="linksColor" class="active">
+        <NavLink id="loggedInNavBarButton" to="/register">
+          Register
+        </NavLink>
       </li>
-    </ul>
+    </div>
   );
 }
 
