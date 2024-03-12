@@ -17,27 +17,25 @@ function LoggedIn() {
   };
 
   return (
-    <ul>
-      <li>
-        <NavLink to="/authors">All authors</NavLink>
-      </li>
-      <li>
-        <NavLink to="/authors/new">Add a author</NavLink>
-      </li>
-      <li>
-        <details>
-          <summary>{user.username}</summary>
-          <ul>
-            <li>
-              <a>My Profile</a>
-            </li>
-            <li>
-              <button onClick={handleLogout}>Log out</button>
-            </li>
-          </ul>
-        </details>
-      </li>
-    </ul>
+    // <li>
+    //   <NavLink to="/authors">All authors</NavLink>
+    // </li>
+    // <li>
+    //   <NavLink to="/authors/new">Add a author</NavLink>
+    // </li>
+    <li id="linksColor" class="active">
+      <details>
+        <summary>{user.username}</summary>
+        <ul>
+          <li>
+            <a>My Profile</a>
+          </li>
+          <li>
+            <a onClick={handleLogout}>Log out</a>
+          </li>
+        </ul>
+      </details>
+    </li>
   );
 }
 
