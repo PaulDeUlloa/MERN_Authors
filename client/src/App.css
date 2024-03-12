@@ -487,10 +487,11 @@ nav #nav-links #linksTag #linksColor:hover{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 140px;
+  color: white;
+  width: 100%;
+  margin-top: 70px;
   background-color: rgba(26, 25, 25, 0.8);
-  padding: 40px;
+  padding: 140px;
 }
 
 #createPageFont{
@@ -720,9 +721,9 @@ nav #nav-links #linksTag #linksColor:hover{
   color: white;
   width: 100%;
   gap: 30px;
-  margin-top: 140px;
+  margin-top: 70px;
   background-color: rgba(26, 25, 25, 0.8);
-  padding: 40px;
+  padding: 140px;
 }
 
 #homeButtonsFont{
@@ -738,12 +739,78 @@ nav #nav-links #linksTag #linksColor:hover{
 }
 /* Details page styling END */
 
-/* Login/ Reg Styling START */
+/* Login Styling START */
 
-#loginWrapper, #registerWrapper{
+#loginWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: white;
+  width: 100%;
+  margin-top: 70px;
+  background-color: rgba(26, 25, 25, 0.8);
+  padding: 140px;
+}
+
+#loginSectionStyling{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#loginInputAndButtonsCentering{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: normal;
+  gap: 15px;
+}
+
+#loginLabelsSpacing{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px ;
+}
+
+/* Login Styling END */
+
+
+
+/* Register Styling START */
+
+#registerWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 100%;
+  margin-top: 70px;
+  background-color: rgba(26, 25, 25, 0.8);
+  padding: 140px;
+}
+
+#registerSectionStyling{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#registerInputAndButtonsCentering{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: normal;
+  gap: 15px;
+}
+
+#registerLabelsSpacing{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px ;
 }
 
 
 
-/* Login/ Reg Styling END */
+
+
+/* Register Styling END */

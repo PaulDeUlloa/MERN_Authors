@@ -35,12 +35,12 @@ function Login() {
 
   return (
     <div id="loginWrapper">
-      <section>
+      <section id="loginSectionStyling">
         <h1>Login</h1>
         <div>
           <form onSubmit={handleSubmit}>
-            <div>
-              <div>
+            <div id="loginInputAndButtonsCentering">
+              <div id="loginLabelsSpacing">
                 <label htmlFor="email">Email:</label>
                 <input
                   name="email"
@@ -50,7 +50,7 @@ function Login() {
                   onChange={handleChange}
                 />
               </div>
-              <div>
+              <div id="loginLabelsSpacing">
                 <label htmlFor="password">Password:</label>
                 <input
                   name="password"
