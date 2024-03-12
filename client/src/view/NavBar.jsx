@@ -53,7 +53,7 @@ function NavBar() {
         </li>
 
         <ul id="linksTag">
-          <li>
+          <li id="linksColor" class="active">
             <a id="loggedInNavBarButton" href="">
               {user ? <LoggedIn /> : <LoggedOut />}
             </a>

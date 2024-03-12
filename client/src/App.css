@@ -403,17 +403,22 @@ nav #nav-links #linksTag #linksColor:hover{
   color: rgb(0, 0, 0);
 }
 
-#loggedInNavBarButton:hover{
-  background: rgb(73,107,136);
-  color: rgb(255, 255, 255);
-  transition: all .3s ease-in-out;
-}
 
 #loggedOutNavBarWrapper{
   display: flex;
   flex-direction: row;
-  gap: 25px;
-  
+  gap: 55px;
+}
+
+
+#loggedOutNavLinks{
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+}
+
+#loggedOutNavLinks:hover{
+  text-decoration: none;
+  color: rgb(253, 253, 253);
 }
 
 

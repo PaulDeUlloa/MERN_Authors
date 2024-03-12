@@ -17,12 +17,6 @@ function LoggedIn() {
   };
 
   return (
-    // <li>
-    //   <NavLink to="/authors">All authors</NavLink>
-    // </li>
-    // <li>
-    //   <NavLink to="/authors/new">Add a author</NavLink>
-    // </li>
     <li id="linksColor" class="active">
       <details>
         <summary>{user.username}</summary>
