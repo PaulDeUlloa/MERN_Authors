@@ -36,12 +36,12 @@ function Register() {
 
   return (
     <div id="registerWrapper">
-      <section>
+      <section id="registerSectionStyling">
         <h1>Register</h1>
-        <div id="formWrapper">
+        <div>
           <form onSubmit={handleSubmit}>
-            <div id="registerCardBody">
-              <div>
+            <div id="registerInputAndButtonsCentering">
+              <div id="registerLabelsSpacing">
                 <label htmlFor="username">Username:</label>
                 <input
                   name="username"
@@ -51,7 +51,7 @@ function Register() {
                   onChange={handleChange}
                 />
               </div>
-              <div>
+              <div id="registerLabelsSpacing">
                 <label htmlFor="email">Email:</label>
                 <input
                   name="email"
@@ -61,7 +61,7 @@ function Register() {
                   onChange={handleChange}
                 />
               </div>
-              <div>
+              <div id="registerLabelsSpacing">
                 <label htmlFor="password">Password:</label>
                 <input
                   name="password"
