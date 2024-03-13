@@ -21,30 +21,31 @@ function LoggedIn() {
   };
 
   return (
-    <li id="linksColor" class="active">
-      <details>
-        <summary>{user.username}</summary>
-        <ul id="testJd">
+    <li class="active">
+      <div class="dropdown">
+        <a
+          class=" btn btn-light dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          {user.username}
+        </a>
+
+        <ul class="dropdown-menu">
           <li>
-            <button
-              type="button"
-              class="btn btn-secondary"
-              onClick={handleProfile}
-            >
+            <a class="dropdown-item" onClick={handleProfile}>
               My Profile
-            </button>
+            </a>
           </li>
           <li>
-            <button
-              type="button"
-              class="btn btn-secondary"
-              onClick={handleLogout}
-            >
+            <a class="dropdown-item" onClick={handleLogout}>
               Log out
-            </button>
+            </a>
           </li>
         </ul>
-      </details>
+      </div>
     </li>
   );
 }
