@@ -15,7 +15,12 @@ function App() {
         <p id="copyrightPTag">
           Copyright &copy;2024 Authors; Designed by,
           <span id="copyrightSpanTag">
-            <a id="copyrightAnchorTag" href="https://github.com/PaulDeUlloa">
+            <a
+              id="copyrightAnchorTag"
+              href="https://github.com/PaulDeUlloa"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               p. de ulloa
             </a>
           </span>
