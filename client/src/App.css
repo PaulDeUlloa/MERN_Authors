@@ -399,10 +399,20 @@ nav #nav-links #linksTag #linksColor:hover{
 }
 
 #loggedInNavBarButton{
-  text-decoration: none;
-  color: rgb(0, 0, 0);
+  cursor: pointer;
 }
 
+#testJd{
+  list-style: none;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 30px;
+  gap: 10px;
+  transform: rotate(-25deg);
+  
+}
 
 #loggedOutNavBarWrapper{
   display: flex;

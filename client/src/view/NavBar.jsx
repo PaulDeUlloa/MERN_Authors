@@ -54,7 +54,7 @@ function NavBar() {
 
         <ul id="linksTag">
           <li>
-            <a id="loggedInNavBarButton" href="">
+            <a id="loggedInNavBarButton">
               {user ? <LoggedIn /> : <LoggedOut />}
             </a>
           </li>

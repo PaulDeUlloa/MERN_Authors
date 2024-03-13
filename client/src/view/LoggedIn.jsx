@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 
@@ -24,12 +24,24 @@ function LoggedIn() {
     <li id="linksColor" class="active">
       <details>
         <summary>{user.username}</summary>
-        <ul>
+        <ul id="testJd">
           <li>
-            <a onClick={handleProfile}>My Profile</a>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              onClick={handleProfile}
+            >
+              My Profile
+            </button>
           </li>
           <li>
-            <a onClick={handleLogout}>Log out</a>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              onClick={handleLogout}
+            >
+              Log out
+            </button>
           </li>
         </ul>
       </details>

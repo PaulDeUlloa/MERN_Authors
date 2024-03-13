@@ -12,12 +12,33 @@ function LoggedOut() {
   };
 
   return (
-    <li>
-      <a onClick={handleLogin}>Login</a>
-
-      <a onClick={handleRegister}>Register</a>
+    <li id="linksColor" class="active">
+      <details>
+        <summary>Join Authors</summary>
+        <ul>
+          <li>
+            <a onClick={handleLogin}>Login</a>
+          </li>
+          <li>
+            <a onClick={handleRegister}>Register</a>
+          </li>
+        </ul>
+      </details>
     </li>
+
+    //   <ul>
+    //     <li>
+    //       <a onClick={handleLogin}>Login</a>
+    //     </li>
+
+    //     <li>
+    //       <a onClick={handleRegister}>Register</a>
+    //     </li>
+    //   </ul>
   );
 }
+
+// href="/login"
+// href="/register"
 
 export default LoggedOut;
