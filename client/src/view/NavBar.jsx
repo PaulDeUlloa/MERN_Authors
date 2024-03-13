@@ -45,20 +45,16 @@ function NavBar() {
             Add Author
           </Link>
         </li>
-        {/* Home button will not show until svg logo is gone and will appear in hamburger drop down. Per CSS, class="testSecondTag". */}
-        <li class="testSecondTag" id="linksTag">
+        {/* Home button will not show until svg logo is gone and will appear in hamburger drop down. Per CSS, class="homeButtonTag". */}
+        <li class="homeButtonTag" id="linksTag">
           <Link to="/" class="active" id="linksColor">
             Home
           </Link>
         </li>
 
-        <ul id="linksTag">
-          <li>
-            <a id="loggedInNavBarButton">
-              {user ? <LoggedIn /> : <LoggedOut />}
-            </a>
-          </li>
-        </ul>
+        <li id="linksTag">
+          <a id="loggedInNavBarButton">{user ? <LoggedIn /> : <LoggedOut />}</a>
+        </li>
       </ul>
 
       <label for="nav-toggle" id="burger-icon">

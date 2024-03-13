@@ -274,7 +274,7 @@ nav #burger-icon #line{
   background-color: #ffffff;
   margin: 5px;
   border-radius: 3px;
-  transition: all .3s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 nav #nav-links #linksTag #linksColor.active{
@@ -282,10 +282,11 @@ nav #nav-links #linksTag #linksColor.active{
   color: rgb(0, 0, 0);
 }
 
+
 nav #nav-links #linksTag #linksColor:hover{
   background: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
-  transition: all .3s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 #nav-links {
@@ -295,7 +296,7 @@ nav #nav-links #linksTag #linksColor:hover{
 }
 
 @media screen and (min-width: 1425px){
-  .testSecondTag{ 
+  .homeButtonTag{ 
       display: none;
   }
 }
@@ -322,8 +323,9 @@ nav #nav-links #linksTag #linksColor:hover{
   nav #nav-links #linksTag #linksColor:hover{
     background: rgb(73,107,136);
     color: rgb(255, 255, 255);
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
   }
+
 
   nav #nav-links{ 
       float: none;
@@ -402,36 +404,45 @@ nav #nav-links #linksTag #linksColor:hover{
   cursor: pointer;
 }
 
-/* #testJd{
-  list-style: none;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 20px;
-  gap: 10px;
-  padding: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-} */
-
-#loggedOutNavBarWrapper{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 55px;
-}
-
-
-#loggedOutNavLinks{
+#loginLogoutButtonsStyling{
   text-decoration: none;
-  color: rgb(255, 0, 0);
+  padding: 7px 15px;
+  border-radius: 20px;
+  font-weight: 900;
 }
 
-#loggedOutNavLinks:hover{
-  text-decoration: none;
-  color: rgb(253, 253, 253);
+#loginLogoutButtonsStyling:hover{
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  transition: all .2s ease-in-out;
+  border: black;
 }
+
+@media screen and (max-width: 1425px){
+
+  #loginLogoutButtonsStyling{
+    padding: 10px 10px;
+    font-size: xx-large;
+  }
+
+
+  #loginLogoutButtonsStyling:hover{
+    background: rgb(73,107,136);
+    color: rgb(255, 255, 255);
+    transition: all .3s ease-in-out;
+  }
+
+}
+
+@media screen and (max-width: 500px){
+
+  #loginLogoutButtonsStyling{
+    padding: 5px 10px;
+    font-size: x-large;
+  }
+
+}
+
 
 
 

@@ -21,14 +21,15 @@ function LoggedIn() {
   };
 
   return (
-    <li class="active">
+    <li>
       <div class="dropdown">
         <a
-          class=" btn btn-light dropdown-toggle"
+          class="btn btn-light dropdown-toggle"
           href="#"
           role="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
+          id="loginLogoutButtonsStyling"
         >
           {user.username}
         </a>
