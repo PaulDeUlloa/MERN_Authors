@@ -1,20 +1,22 @@
-import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function LoggedOut() {
-  return (
-    <div id="loggedOutNavBarWrapper">
-      <li>
-        <NavLink id="loggedOutNavLinks" to="/login">
-          Login
-        </NavLink>
-      </li>
+  const navigate = useNavigate();
 
-      <li>
-        <NavLink id="loggedOutNavLinks" to="/register">
-          Register
-        </NavLink>
-      </li>
-    </div>
+  const handleLogin = () => {
+    navigate("/login");
+  };
+
+  const handleRegister = () => {
+    navigate("/register");
+  };
+
+  return (
+    <li>
+      <a onClick={handleLogin}>Login</a>
+
+      <a onClick={handleRegister}>Register</a>
+    </li>
   );
 }
 

@@ -407,6 +407,7 @@ nav #nav-links #linksTag #linksColor:hover{
 #loggedOutNavBarWrapper{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 55px;
 }
 

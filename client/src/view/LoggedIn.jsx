@@ -16,13 +16,17 @@ function LoggedIn() {
     navigate("/login");
   };
 
+  const handleProfile = () => {
+    navigate("#");
+  };
+
   return (
     <li id="linksColor" class="active">
       <details>
         <summary>{user.username}</summary>
         <ul>
           <li>
-            <a>My Profile</a>
+            <a onClick={handleProfile}>My Profile</a>
           </li>
           <li>
             <a onClick={handleLogout}>Log out</a>
