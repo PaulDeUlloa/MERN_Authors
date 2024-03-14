@@ -25,16 +25,6 @@ function LoggedOut() {
         </ul>
       </details>
     </li>
-
-    //   <ul>
-    //     <li>
-    //       <a onClick={handleLogin}>Login</a>
-    //     </li>
-
-    //     <li>
-    //       <a onClick={handleRegister}>Register</a>
-    //     </li>
-    //   </ul>
   );
 }
 
