@@ -21,7 +21,7 @@ authorsRouter
 // prettier-ignore
 authorsRouter
   .route("/:id")
-  .post(oneAuthor)
+  .get(oneAuthor)
   .put(updateAuthor)
   .patch(updateAuthor)
   .delete(deleteAuthor);

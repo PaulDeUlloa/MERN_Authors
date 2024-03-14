@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { registerUser } from "../services/user-service";
 import { useNavigate } from "react-router-dom";
+import ErrorAlert from "../view/ErrorAlert.jsx";
 
 const initialForm = {
   username: "",
@@ -13,6 +14,7 @@ function Register() {
   const navigate = useNavigate();
   const [registerForm, setRegisterForm] = useState(initialForm);
   const [errors, setErrors] = useState(initialForm);
+
   const { dispatch } = useContext(AuthContext);
 
   const handleSubmit = (e) => {
@@ -24,7 +26,10 @@ function Register() {
         localStorage.setItem("user", JSON.stringify(userData));
         navigate("/");
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+        setErrors(err?.response?.data?.errors);
+      });
   };
 
   const handleChange = (e) => {
@@ -38,6 +43,7 @@ function Register() {
     <div id="registerWrapper">
       <section id="registerSectionStyling">
         <h1>Register</h1>
+        {errors && <ErrorAlert message={errors} />}
         <div>
           <form onSubmit={handleSubmit}>
             <div id="registerInputAndButtonsCentering">
