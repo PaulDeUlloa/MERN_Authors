@@ -22,7 +22,7 @@ function LoggedIn() {
 
   return (
     <li>
-      <div class="dropdown">
+      <div class="dropdown-center">
         <a
           class="btn btn-light dropdown-toggle"
           href="#"
@@ -36,12 +36,23 @@ function LoggedIn() {
 
         <ul class="dropdown-menu">
           <li>
-            <a class="dropdown-item" onClick={handleProfile}>
+            <a
+              class="dropdown-item"
+              id="loginLogoutDropDownFont"
+              onClick={handleProfile}
+            >
               My Profile
             </a>
           </li>
           <li>
-            <a class="dropdown-item" onClick={handleLogout}>
+            <hr class="dropdown-divider" />
+          </li>
+          <li>
+            <a
+              class="dropdown-item"
+              id="loginLogoutDropDownFont"
+              onClick={handleLogout}
+            >
               Log out
             </a>
           </li>

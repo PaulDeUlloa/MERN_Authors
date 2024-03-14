@@ -13,7 +13,7 @@ function LoggedOut() {
 
   return (
     <li>
-      <div class="dropdown">
+      <div class="dropdown-center">
         <a
           class="btn btn-light dropdown-toggle"
           href="#"
@@ -25,16 +25,24 @@ function LoggedOut() {
           Join Authors
         </a>
 
-        <ul class="dropdown-menu dropdown-menu-dark">
+        <ul class="dropdown-menu">
           <li>
-            <a class="dropdown-item" onClick={handleLogin}>
+            <a
+              class="dropdown-item"
+              onClick={handleLogin}
+              id="loginLogoutDropDownFont"
+            >
               Login
             </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider" />
           </li>
           <li>
             <a
               class="dropdown-item active"
               onClick={handleRegister}
+              id="loginLogoutDropDownFont"
               aria-current="true"
             >
               Register
