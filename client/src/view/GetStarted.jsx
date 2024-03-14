@@ -21,8 +21,8 @@ const GetStarted = () => {
       <div id="featuredHeaderStyling">
         <h1>Featured Authors</h1>
         <p id="getStartedFeaturedAuthorsPTag">
-          Authors that are posted to our page have a chance of being featured on
-          our main page carousel
+          Authors that are posted to our site have a chance of being featured on
+          our main page carousel!
         </p>
       </div>
       <div id="carouselWrapper">
@@ -56,7 +56,7 @@ const GetStarted = () => {
                 class="d-block w-100"
                 alt="stephen_king_picture"
                 width="100"
-                height="400"
+                height="525"
               />
               <div class="carousel-caption d-none d-md-block">
                 <h5>Stephen King</h5>
@@ -72,7 +72,7 @@ const GetStarted = () => {
                 class="d-block w-100"
                 alt="ken_follet_picture"
                 width="100"
-                height="400"
+                height="525"
               />
               <div class="carousel-caption d-none d-md-block">
                 <h5>Ken Follet</h5>
@@ -88,7 +88,7 @@ const GetStarted = () => {
                 class="d-block w-100"
                 alt="jk_rowling_picture"
                 width="100"
-                height="400"
+                height="525"
               />
               <div class="carousel-caption d-none d-md-block">
                 <h5>J.K. Rowling</h5>

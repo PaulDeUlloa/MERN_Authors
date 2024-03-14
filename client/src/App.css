@@ -634,10 +634,20 @@ nav #nav-links #linksTag #linksColor:hover{
   background-image: linear-gradient( to bottom ,rgb(234, 203, 203), rgb(185, 109, 55), rgb(234, 203, 203));
 } */
 
+/* #getStartedCarouselControlTabs{
+  color: chartreuse;
+} */
+
 /* Carousel Wrapper start */
 #carouselWrapper{
-  margin: auto 900px;
+  margin: auto 1000px;
   
+}
+
+@media screen and (max-width: 2300px) { 
+  #carouselWrapper{
+    margin: auto 800px;
+  }
 }
 
 @media screen and (max-width: 2130px) { 
@@ -648,11 +658,17 @@ nav #nav-links #linksTag #linksColor:hover{
 
 @media screen and (max-width: 2030px) { 
   #carouselWrapper{
-    margin: auto 800px;
+    margin: auto 750px;
   }
 }
 
 @media screen and (max-width: 1930px) { 
+  #carouselWrapper{
+    margin: auto 720px;
+  }
+}
+
+@media screen and (max-width: 1830px) { 
   #carouselWrapper{
     margin: auto 620px;
   }
@@ -677,7 +693,7 @@ nav #nav-links #linksTag #linksColor:hover{
 }
 
 .carousel-caption{
-  color: white;
+  color: rgb(255, 255, 255);
 }
 /* Carousel Wrapper End */
 

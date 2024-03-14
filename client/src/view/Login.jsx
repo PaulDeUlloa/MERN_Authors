@@ -21,7 +21,7 @@ function Login() {
         console.log(userData);
         dispatch({ type: "LOGIN", payload: userData });
         localStorage.setItem("user", JSON.stringify(userData));
-        navigate("/authors");
+        navigate("/");
       })
       .catch((err) => console.log(err));
   };
