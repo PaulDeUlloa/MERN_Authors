@@ -1,10 +1,12 @@
 import { useState, useContext, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext.jsx";
 import { oneAuthor } from "../services/author-service.js";
 
 function OneAuthor() {
   const navigate = useNavigate();
+  const { id } = useParams();
+  const [getOneAuthor, setGetOneAuthor] = useState(null);
 
   // const [errors, setErrors] = useState([]);
   const {
@@ -18,26 +20,30 @@ function OneAuthor() {
     }
   });
 
-  useEffect((authorId) => {
-    oneAuthor(authorId)
-      .then((oneAuthor) => setOneAuthor(oneAuthor))
+  useEffect(() => {
+    oneAuthor(id)
+      .then((getOneAuthor) => setGetOneAuthor(getOneAuthor))
       .catch((err) => console.log(err));
   }, []);
 
   return (
-    <div id="detailsPageCentering" key={oneAuthor._id}>
-      <div id="detailsTextAlignment">
-        <h2>Name: </h2>
-        <p>{oneAuthor.name}</p>
-        <h2>Description: </h2>
-        <p>{oneAuthor.description}</p>
+    getOneAuthor && (
+      <div id="detailsPageCentering">
+        <h1>Details:</h1>
+
+        <div id="detailsTextAlignment">
+          <h2>Name: </h2>
+          <p>{getOneAuthor.name}</p>
+          <h2>Description: </h2>
+          <p>{getOneAuthor.description}</p>
+        </div>
+        <Link to={"/authors"}>
+          <button id="homeButtonsFont" class="btn btn-light">
+            Home
+          </button>
+        </Link>
       </div>
-      <Link to={"/authors"}>
-        <button id="homeButtonsFont" class="btn btn-light">
-          Home
-        </button>
-      </Link>
-    </div>
+    )
   );
 }
 

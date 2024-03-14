@@ -29,6 +29,7 @@ async function oneAuthor(req, res) {
   try {
     const oneAuthor = await Author.findById(id);
     res.status(200).json(oneAuthor);
+    console.log(oneAuthor);
   } catch (error) {
     console.log(error);
     res.status(400).json(error);

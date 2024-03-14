@@ -32,9 +32,9 @@ async function allAuthors() {
   }
 }
 
-async function oneAuthor(authorId) {
+async function oneAuthor(id) {
   try {
-    const response = await http.get(`/authors/${authorId}`);
+    const response = await http.get(`/authors/${id}`);
     return response.data;
   } catch (error) {
     throw error;
@@ -50,9 +50,9 @@ async function updateAuthor(author) {
   }
 }
 
-async function deleteAuthor(authorId) {
+async function deleteAuthor(id) {
   try {
-    const response = await http.delete(`/authors/${authorId}`);
+    const response = await http.delete(`/authors/${id}`);
     return response.data;
   } catch (error) {
     throw error;
