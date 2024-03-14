@@ -12,18 +12,36 @@ function LoggedOut() {
   };
 
   return (
-    <li id="linksColor" class="active">
-      <details>
-        <summary>Join Authors</summary>
-        <ul>
+    <li>
+      <div class="dropdown">
+        <a
+          class="btn btn-light dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          id="loginLogoutButtonsStyling"
+        >
+          Join Authors
+        </a>
+
+        <ul class="dropdown-menu dropdown-menu-dark">
           <li>
-            <a onClick={handleLogin}>Login</a>
+            <a class="dropdown-item" onClick={handleLogin}>
+              Login
+            </a>
           </li>
           <li>
-            <a onClick={handleRegister}>Register</a>
+            <a
+              class="dropdown-item active"
+              onClick={handleRegister}
+              aria-current="true"
+            >
+              Register
+            </a>
           </li>
         </ul>
-      </details>
+      </div>
     </li>
   );
 }
