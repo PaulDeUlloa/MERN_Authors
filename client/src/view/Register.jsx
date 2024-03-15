@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
-import { AuthContext } from "../context/AuthContext";
-import { registerUser } from "../services/user-service";
+import { AuthContext } from "../context/AuthContext.jsx";
+import { registerUser } from "../services/user-service.js";
 import { useNavigate } from "react-router-dom";
 import ErrorAlert from "../view/ErrorAlert.jsx";
 
@@ -43,7 +43,7 @@ function Register() {
     <div id="registerWrapper">
       <section id="registerSectionStyling">
         <h1>Register</h1>
-        {errors && <ErrorAlert message={errors} />}
+        {/* {errors && <ErrorAlert message={errors} />} */}
         <div>
           <form onSubmit={handleSubmit}>
             <div id="registerInputAndButtonsCentering">

@@ -879,8 +879,28 @@ nav #nav-links #linksTag #linksColor:hover{
   gap: 10px ;
 }
 
-
-
-
-
 /* Register Styling END */
+
+
+/* Error Alert Styling Start */
+
+#errorAlertStylingWrapper{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 50%;
+  height: 50px;
+  background-color: lightblue;
+  border-color: lightblue;
+}
+
+#errorAlertMessage{
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+#errorTriangleIcon{
+  height: 20px;
+}
+
+/* Error Alert Styling END */
