@@ -37,7 +37,7 @@ function OneAuthor() {
           <h2>Description: </h2>
           <p>{getOneAuthor.description}</p>
         </div>
-        <Link to={"/authors"}>
+        <Link id="homeButtonAlignment" to={"/authors"}>
           <button id="homeButtonsFont" class="btn btn-light">
             Home
           </button>
