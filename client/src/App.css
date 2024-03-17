@@ -796,6 +796,10 @@ nav #nav-links #linksTag #linksColor:hover{
   padding: 140px;
 }
 
+#detailsTitle{
+  text-decoration: underline;
+}
+
 #homeButtonsFont{
     font-weight: 700;
     font-family:Arial, Helvetica, sans-serif;

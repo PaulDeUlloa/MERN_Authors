@@ -29,7 +29,7 @@ function OneAuthor() {
   return (
     getOneAuthor && (
       <div id="detailsPageCentering">
-        <h1>Details:</h1>
+        <h1 id="detailsTitle">Details:</h1>
 
         <div id="detailsTextAlignment">
           <h2>Name: </h2>
