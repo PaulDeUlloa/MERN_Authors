@@ -17,7 +17,7 @@ async function authorize(req, res, next) {
 
   try {
     const { id } = jwt.verify(token, JWT_SECRET);
-    req.userId = await User.findById.select("_id");
+    req.userId = await User.findById(id).select("_id");
     next();
   } catch (err) {
     console.log(err);

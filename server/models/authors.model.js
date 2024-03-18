@@ -1,5 +1,4 @@
-import mongoose from "mongoose";
-import { model } from "mongoose";
+import { model, mongoose } from "mongoose";
 
 const AuthorSchema = new mongoose.Schema(
   {
