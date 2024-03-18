@@ -41,11 +41,11 @@ async function updateAuthor(req, res) {
   const { id } = req.params;
 
   try {
-    const updateAuthor = await Author.findByIdAndUpdate(id, req.body, {
+    const updatedAuthor = await Author.findByIdAndUpdate(id, req.body, {
       new: true,
       runValidators: true,
     });
-    res.status(200).json(updateAuthor);
+    res.status(200).json(updatedAuthor);
   } catch (error) {
     console.log(error);
     res.status(400).json(error);
@@ -58,8 +58,8 @@ async function deleteAuthor(req, res) {
   console.log("deleting author", id);
 
   try {
-    const deleteOne = await Author.findByIdAndDelete(id);
-    res.status(200).json(deleteOne);
+    const deletedAuthor = await Author.findByIdAndDelete(id);
+    res.status(200).json(deletedAuthor);
   } catch (error) {
     console.log(error);
     res.status(400).json(error);

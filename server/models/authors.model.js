@@ -1,6 +1,6 @@
-import { model, mongoose } from "mongoose";
+import { model, Schema } from "mongoose";
 
-const AuthorSchema = new mongoose.Schema(
+const AuthorSchema = new Schema(
   {
     name: {
       type: String,
