@@ -24,6 +24,7 @@ const userSchema = new Schema(
         validator: (value) => EMAIL_REGEX.test(value),
         message: "Please enter a valid email",
       },
+      unique: true,
     },
     password: {
       type: String,

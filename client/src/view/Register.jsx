@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../context/AuthContext.jsx";
 import { registerUser } from "../services/user-service.js";
 import { useNavigate } from "react-router-dom";
-import ErrorAlert from "../view/ErrorAlert.jsx";
+// import ErrorAlert from "../view/ErrorAlert.jsx";
 
 const initialForm = {
   username: "",
@@ -43,7 +43,7 @@ function Register() {
     <div id="registerWrapper">
       <section id="registerSectionStyling">
         <h1>Register</h1>
-        {/* {errors && <ErrorAlert message={errors} />} */}
+
         <div>
           <form onSubmit={handleSubmit}>
             <div id="registerInputAndButtonsCentering">
@@ -86,6 +86,13 @@ function Register() {
               </button>
             </div>
           </form>
+          {/* {errors.map((err, idx) => {
+            return (
+              <p id="errorMessagesColor" key={idx}>
+                {err}
+              </p>
+            );
+          })} */}
         </div>
       </section>
     </div>

@@ -12,6 +12,7 @@ async function authorize(req, res, next) {
   if (!Authorization) {
     return res.status(401).json({ errors: "Authorization token required." });
   }
+  console.log("you are here1####");
 
   const token = Authorization.split(" ")[1];
 
@@ -23,6 +24,7 @@ async function authorize(req, res, next) {
     console.log(err);
     return res.status(401).json({ errors: "Request not authorized." });
   }
+  console.log("you are here2####");
 }
 
 export default authorize;
