@@ -36,6 +36,8 @@ function OneAuthor() {
           <p>{getOneAuthor.name}</p>
           <h2>Description: </h2>
           <p>{getOneAuthor.description}</p>
+          <h2>Recommended: </h2>
+          <p>{getOneAuthor.recommend ? "Yes." : "For now, not recommended."}</p>
         </div>
         <Link id="homeButtonAlignment" to={"/authors"}>
           <button id="homeButtonsFont" class="btn btn-light">
