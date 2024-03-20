@@ -59,7 +59,7 @@ const User = model("User", userSchema);
 export default User;
 
 // Our UserSchema doesn't contain a field for confirmPassword. This code will allow us to compare our password with it.
-// We will make use of mongoose virtuals. (fields we don't want to save in MongoDB). We will chain calls to get and set to
+// We will make use of mongoose virtual's. (fields we don't want to save in MongoDB). We will chain calls to get and set to
 // the returned virtual object, allowing us to establish both a getter and a setter for the virtual field.
 
 // userSchema

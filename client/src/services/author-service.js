@@ -43,7 +43,7 @@ async function oneAuthor(authorId) {
 
 async function updateAuthor(author) {
   try {
-    const response = await http.patch(`/authors/${author._id}`, author);
+    const response = await http.patch(`/authors/${author._id}/edit`, author);
     return response.data;
   } catch (error) {
     throw error;

@@ -9,10 +9,10 @@ async function authorize(req, res, next) {
   //verify authorization
   const { Authorization } = req.headers;
 
+  console.log("you are here1####");
   if (!Authorization) {
     return res.status(401).json({ errors: "Authorization token required." });
   }
-  console.log("you are here1####");
 
   const token = Authorization.split(" ")[1];
 
