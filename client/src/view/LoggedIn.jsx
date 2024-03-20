@@ -31,7 +31,7 @@ function LoggedIn() {
           aria-expanded="false"
           id="loginLogoutButtonsStyling"
         >
-          {user.username}
+          Heeey, {user.username}
         </a>
 
         <ul class="dropdown-menu">

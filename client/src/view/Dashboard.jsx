@@ -29,7 +29,7 @@ function AllAuthors() {
       .catch((err) => console.log(err));
   };
 
-  //* updates dom without refresh
+  // * updates dom without refresh
   // const removeFromDom = (authorId) => {
   //   const filteredList = authorList.filter(
   //     (eachAuthor, idx) => eachAuthor._id !== authorId

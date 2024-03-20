@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const UpdateAuthor = () => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
+  const [recommend, setRecommend] = useState("");
 
   const { id } = useParams();
 
@@ -20,6 +21,7 @@ const UpdateAuthor = () => {
         const oneAuthor = res.data;
         setName(oneAuthor.name);
         setDescription(oneAuthor.description);
+        setRecommend(oneAuthor.recommend);
       })
       .catch((err) => console.log(err));
   }, []);
@@ -28,7 +30,11 @@ const UpdateAuthor = () => {
     e.preventDefault();
 
     axios
-      .put(`http://localhost:8000/api/authors/${id}`, { name, description })
+      .put(`http://localhost:8000/api/authors/${id}`, {
+        name,
+        description,
+        recommend,
+      })
       .then(() => navigate("/authors"))
       .catch((err) => {
         const errResponse = err.response.data.errors;
@@ -62,6 +68,14 @@ const UpdateAuthor = () => {
               onChange={(e) => setDescription(e.target.value)}
               rows="3"
               cols="24"
+            />
+          </div>
+          <div id="editAndCreateLabelSpacing">
+            <label id="updateAndEditLabels">Recommend: </label>
+            <input
+              type="checkbox"
+              value={recommend}
+              onChange={(e) => setRecommend(e.target.value)}
             />
           </div>
           <div id="buttonSpacing">
