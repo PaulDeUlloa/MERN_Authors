@@ -13,6 +13,7 @@ if (user) {
     Authorization: `Bearer: ${user.token}`,
   };
 }
+console.log("We are HERE " + `${user.token}`);
 
 async function createAuthor(author) {
   try {
