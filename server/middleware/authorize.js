@@ -9,7 +9,8 @@ async function authorize(req, res, next) {
   //verify authorization
   const { Authorization } = req.headers;
 
-  console.log("you are here1####");
+  console.log({ Authorization });
+
   if (!Authorization) {
     return res.status(401).json({ errors: "Authorization token required." });
   }

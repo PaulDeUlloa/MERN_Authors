@@ -16,8 +16,8 @@ if (user) {
 
 async function createAuthor(author) {
   try {
-    const res = await http.post("/authors", author, authConfig);
-    return res.data;
+    const response = await http.post("/authors", author, authConfig);
+    return response.data;
   } catch (error) {
     throw error;
   }
