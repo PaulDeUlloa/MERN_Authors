@@ -21,9 +21,9 @@
 
 
 ## General Information
-- Users may create, edit, or delete their favorite author that they would like others to see on the collective all authors page.
-- What problem does this (intend to) solve? This is an app where users can have a fun and safe space to express thier favorite authors and inspire others to look them up.
-- What is the purpose of your project? As a growing and passionate developer, learning to create more full-stack applications is what drove this fiery flame to start and complete this application.
+- Once a user registers an account, they may login and create, edit, or delete their favorite author that they would like others to see on the collective all authors page.
+- What problem does this (intend to) solve? This is an app where users can have a fun and on a safe space to express their favorite authors and inspire others to look them up.
+- What is the purpose of your project? As a growing and passionate developer, learning to create more full-stack applications is what drove me to start and complete this application.
 
 
 ## Technologies Used
