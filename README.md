@@ -11,17 +11,19 @@
 * [Screenshots](#screenshots)
 * [Setup](#setup)
 * [Usage](#usage)
+* [Contact](#contact)
+<!--
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
-* [Contact](#contact)
+-->
 <!-- * [License](#license) -->
 
 
 ## General Information
-- Users may create, edit, or delete their favorite author that they would like others to see on the collective all authors page.
-- What problem does this (intend to) solve? This is an app where users can have a fun and safe space to express thier favorite authors and inspire others to look them up.
-- What is the purpose of your project? As a growing and passionate developer, learning to create more full-stack applications is what drove this fiery flame to start and complete this application.
+- Once a user registers an account, they may login and create, edit, or delete their favorite author that they would like others to see on the collective all authors page.
+- What problem does this (intend to) solve? This is an app where users can utilize CRUD and have fun expressing their favorite authors and inspire others to look them up.
+- What is the purpose of your project? As a growing and passionate developer, learning to create more full-stack applications is what drove me to start and complete this application.
 
 
 ## Technologies Used
@@ -29,46 +31,59 @@
 - Javascript
 - Node.js
 - Express
+- Mongoose
 - HTML5
 - CSS
 - MongoDB
+- Axios
+- Bcrypt
+- Jsonwebtoken
 - Bootstrap
 
 
 ## Features
 List the ready features here:
 - Users can login and register
-  <!-- used (JWTs) In order to keep track of who is logged in, we will be using JSON web tokens (JWTs). JWTs are a structured way to keep data secure and to make sure that data has not been tampered with along the request/response cycle. -->
+- Used (JWTs) to keep track of who is logged in, to ensure data has not been tampered with along the request/response cycle.
 - Users can create and post their favorite author
 - Users can edit their author
 - Users can delete their author
 
-<!--
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
+![All Authors](./img/screenshot.png)
+![Create Author](./img/screenshot.png)
 
-<!--
+
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
+### Project requirements/dependencies:
+#### Client:
+Axios, bcrypt, bootstrap, react, react-dom, react-router-dom, and react-scripts.
+#### Server:
+Bcrypt, cookie-parser, cors, dotenv, express, jsonwebtoken, mongoose, mongoose-unique-validator, and morgan.
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
+Install the above dependencies for either the client or server folder which means you will need two seperate terminals. 
 
+#### Suggestion:
+PowerShell for client and Git Bash for Server. 
 
 ## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
 
-`write-your-code-here`
+#### Client Activation:
+- `cd client`
+- `npm run start`
+
+#### Server Activation:
+- `cd server`
+- `nodemon server.js`
 
 
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is: _in progress_ 
 
-
+<!-- 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
+Include areas you believe need improvement / could be improved. Also add TODOs for future development. 
 
 Room for improvement:
 - Improvement to be done 1
@@ -84,12 +99,10 @@ Give credit here.
 - This project was inspired by...
 - This project was based on [this tutorial](https://www.example.com).
 - Many thanks to...
-
+-->
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
-
--->
+Created by [@PaulDeUlloa](https://www.pauldeulloa.com/) - feel free to contact me!
 
 
 <!-- Optional -->
