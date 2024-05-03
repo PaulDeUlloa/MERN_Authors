@@ -17,3 +17,5 @@ function Alert({ message }) {
 }
 
 export default Alert;
+
+// This is our error alert that is used when a user who is no longer signed in tries to complete a create author form.
