@@ -16,6 +16,7 @@ const GetStarted = () => {
     }
   });
 
+  // Here is our home page that greets new users. This also features authors that get hand picked and displayed on the community carrousel.
   return (
     <div id="getStartedBackgroundImage">
       <div id="featuredHeaderStyling">
