@@ -20,6 +20,7 @@ function LoggedIn() {
     navigate("#");
   };
 
+  // TODO:Would like to add link for my profile to display users Information.
   return (
     <li>
       <div class="dropdown-center">
