@@ -39,6 +39,8 @@ function Register() {
     });
   };
 
+  //TODO: Need to add error messages so if a user makes in error it was display to the user we registering.
+
   return (
     <div id="registerWrapper">
       <section id="registerSectionStyling">
