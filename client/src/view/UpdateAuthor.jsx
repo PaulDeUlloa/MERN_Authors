@@ -46,6 +46,8 @@ const UpdateAuthor = () => {
       });
   };
 
+  //TODO: Would like to update UI for the update form.
+
   return (
     <div id="updatePageCentering">
       <h2 id="editTitleColoring">Edit this author:</h2>
