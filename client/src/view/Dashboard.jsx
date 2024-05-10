@@ -29,6 +29,8 @@ function AllAuthors() {
       .catch((err) => console.log(err));
   };
 
+  //TODO: Once a user deletes an author. Need to re-add updates DOM without having to refresh the page.
+
   // * updates dom without refresh
   // const removeFromDom = (authorId) => {
   //   const filteredList = authorList.filter(
