@@ -50,6 +50,8 @@ function CreateAuthor() {
       });
   };
 
+  //TODO: would like to update UI for CreateAuthor page.
+
   return (
     <div id="createPageCentering">
       <h2 id="createPageFont">Add a new author:</h2>
